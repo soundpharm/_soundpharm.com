@@ -1,0 +1,65 @@
+/* ****************** DEFAULT RESETS *********************** */
+/* line 2, ../scss/resets.scss */
+html, body, div, img, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, hr, pre, form, fieldset, input, textarea, select, caption, legend, address, p, blockquote, table, th, td {
+  padding: 0;
+  margin: 0;
+}
+
+/* line 3, ../scss/resets.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 4, ../scss/resets.scss */
+table, fieldset, img {
+  border: 0;
+}
+
+/* line 5, ../scss/resets.scss */
+address, caption, cite, code, dfn, th, var {
+  font-style: normal;
+  font-weight: normal;
+}
+
+/* line 6, ../scss/resets.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 7, ../scss/resets.scss */
+caption, th, td {
+  text-align: left;
+}
+
+/* line 8, ../scss/resets.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+/* line 9, ../scss/resets.scss */
+q:before, q:after {
+  content: '';
+}
+
+/* line 10, ../scss/resets.scss */
+abbr, acronym {
+  border: 0;
+}
+
+/* line 11, ../scss/resets.scss */
+a {
+  outline: none;
+}
+
+/* line 12, ../scss/resets.scss */
+a img {
+  border: none;
+}
+
+/* HTML5 display */
+/* line 14, ../scss/resets.scss */
+article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}

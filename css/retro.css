@@ -1,0 +1,857 @@
+/* ****************** A RETRO DESIGN FOR ANCIENT TECHNOLOGY *********************** */
+/* ****************** DEFAULT RESETS *********************** */
+html,body,div,img,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,hr,pre,form,fieldset,input,textarea,select,caption,legend,address,p,blockquote,table,th,td {padding:0;margin:0;}
+table {border-collapse:collapse;border-spacing:0;}
+table,fieldset,img { border:0;}
+address,caption,cite,code,dfn,th,var {font-style:normal;font-weight:normal;}
+ol,ul {list-style:none;}
+caption,th,td {text-align:left;}
+h1,h2,h3,h4,h5,h6 {font-size:100%;font-weight:normal;}
+q:before,q:after {content:'';}
+abbr,acronym {border:0;}
+a {outline:none}
+a img {border:none}
+/* HTML5 display */
+article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {display:block;}
+
+/* COMMON TEXT STYLES ***************************************** */
+@font-face {
+  font-family: "CaviarDreams";
+  font-style: normal;
+  font-weight: normal;
+  src: url("/fonts/CaviarDreams-webfont.eot");
+  src: local("☺"), url("/fonts/CaviarDreams-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/CaviarDreams-webfont.svg#CaviarDreams") format("svg"), url("/fonts/CaviarDreams-webfont.woff") format("woff"), url("/fonts/CaviarDreams-webfont.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "CaviarDreamsBold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("/fonts/CaviarDreams_Bold-webfont.eot");
+  src: local("☺"), url("/fonts/CaviarDreams_Bold-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/CaviarDreams_Bold-webfont.woff") format("woff"), url("/fonts/CaviarDreams_Bold-webfont.ttf") format("truetype"), url("/fonts/CaviarDreams_Bold-webfont.svg#CaviarDreamsBold") format("svg");
+}
+
+@font-face {
+  font-family: 'sofiaProLtCdRg';
+  src: url("/fonts/SofiaProLiCond-webfont.eot");
+  src: url("/fonts/SofiaProLiCond-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/SofiaProLiCond-webfont.svg#sofiaProLtCdRg") format("svg"), url("/fonts/SofiaProLiCond-webfont.woff") format("woff"), url("/fonts/SofiaProLiCond-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* links  -------- */
+/* line 50, ../scss/styles.scss */
+a {
+  color: #f00;
+  text-decoration: none;
+}
+/* line 52, ../scss/styles.scss */
+a:link, a:active, a:hover {
+  color: #f00;
+  text-decoration: none;
+}
+/* line 53, ../scss/styles.scss */
+a:hover {
+  color: #d00;
+}
+
+/* headlines */
+/* headlines */
+h1,h2,h3,h4,h5,h6 {color:#000;font-family:$sofiaProLtCdRg;line-height:1.2em;}
+h1 {font-size:2.0em; /* 24px */ color:#000; margin-bottom:0.25em ;}
+h2 {font-size:1.5em; /* 18px */ color:#666; margin-bottom:0.4em;}
+h3 {font-size:1.1em; /* 14px */ color:#000; margin-bottom:0.25em;}
+h4 {font-size:1.0em; /* 12px */ font-family:$Verdana; font-weight:normal;}
+h5 {font-size:1.0em; /* 13px */ font-family:$Verdana;}
+/* text  -------- */
+p {margin-bottom:1em;}
+.bold {font-weight:bold;}
+.floatLeft {float:left;}
+.floatRight {float:right;}
+.clearBoth {clear:both;}
+.clearLeft {clear:left;}
+.clearRight {clear:right;}
+.centered {text-align:center; margin-left:auto; margin-right:auto;}
+/* image replacement  -------- */
+.ir {display:block;text-align:left;overflow:hidden;text-indent:-5000px;background-position:0 0;background-repeat:no-repeat;}
+/* ClearFix For modern browsers  -------- */
+.cf {zoom:1;}
+.cf:before, .cf:after {content:""; display:block; overflow:hidden;}
+.cf:after {clear:both;}
+
+/* GLOBAL STRUCTURE ***************************************** */
+html {}
+body {
+  position: relative;
+  font-family: Arial, geneva, sans-serif;
+  font-size: 100%;
+  background-color: #fff;
+  overflow-y: scroll;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#000000',GradientType=0 );
+}
+
+/* line 88, ../scss/styles.scss */
+#container {
+  position: relative;
+  z-index: 2;
+  font-size: 0.75em;
+  padding: 0 0 20px 0;
+  min-width: 800px;
+}
+
+/* line 89, ../scss/styles.scss */
+.no-js #container {
+  background: url(/graphics/global/bg-hex-6px-wht.png) 0 0 repeat;
+}
+
+/* backgrounds -------- */
+/* line 93, ../scss/styles.scss */
+.parallax {
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  z-index: 1;
+  opacity: 0;
+}
+
+/* line 94, ../scss/styles.scss */
+#bg2px, #bg3px, #bg6px {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+/* line 96, ../scss/styles.scss */
+#bg2px {
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMTIiIGhlaWdodD0iNTYiPgoJPHBhdGggZD0iTTAgMCBMMCAyOCBMNTYgMCBMMTEyIDI4IEw1NiA1NiBMMCAyOCBMMCA1NiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZmZmIiBzdHJva2Utd2lkdGg9IjIiPjwvcGF0aD4KCTxwYXRoIGQ9Ik01NiAwIEw1NiA1NiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZmZmIiBzdHJva2Utd2lkdGg9IjIiPjwvcGF0aD4KCTxwYXRoIGQ9Ik0xMTIgMCBMMTEyIDU2IiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmYiIHN0cm9rZS13aWR0aD0iMiI+PC9wYXRoPgo8L3N2Zz4=");
+  background-position: center;
+}
+
+/* line 97, ../scss/styles.scss */
+#bg3px {
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMjQiIGhlaWdodD0iMTEyIj4KCTxwYXRoIGQ9Ik0wIDAgTDAgNTYgTDExMiAwIEwyMjQgNTYgTDExMiAxMTIgTDAgNTYgTDAgMTEyIiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmYiIHN0cm9rZS13aWR0aD0iMyI+PC9wYXRoPgoJPHBhdGggZD0iTTExMiAwIEwxMTIgMTEyIiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmYiIHN0cm9rZS13aWR0aD0iMyI+PC9wYXRoPgoJPHBhdGggZD0iTTIyNCAwIEwyMjQgMTEyIiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmYiIHN0cm9rZS13aWR0aD0iMyI+PC9wYXRoPgo8L3N2Zz4=");
+  background-position: center -28px;
+}
+
+/* line 98, ../scss/styles.scss */
+#bg6px {
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0NDgiIGhlaWdodD0iMjI0Ij4KCTxwYXRoIGQ9Ik0wIDAgTDAgMTEyIEwyMjQgMCBMNDQ4IDExMiBMMjI0IDIyNCBMMCAxMTIgTDAgMjI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmYiIHN0cm9rZS13aWR0aD0iNiI+PC9wYXRoPgoJPHBhdGggZD0iTTIyNCAwIEwyMjQgMjI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmYiIHN0cm9rZS13aWR0aD0iNiI+PC9wYXRoPgoJPHBhdGggZD0iTTQ0OCAwIEw0NDggMjI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmYiIHN0cm9rZS13aWR0aD0iNiI+PC9wYXRoPgo8L3N2Zz4=");
+  background-position: center -28px;
+}
+
+/* line 100, ../scss/styles.scss */
+.no-inlinesvg.cssgradients #bg2px {
+  background-color: #ddd;
+  background-image: linear-gradient(30deg, #666666 12%, transparent 12.5%, transparent 87%, #ffffff 87.5%, #ffffff), linear-gradient(150deg, #ffffff 12%, transparent 12.5%, transparent 87%, #666666 87.5%, #666666), linear-gradient(30deg, #666666 12%, transparent 12.5%, transparent 87%, #ffffff 87.5%, #ffffff), linear-gradient(150deg, #ffffff 12%, transparent 12.5%, transparent 87%, #666666 87.5%, #666666), linear-gradient(120deg, #9999aa 25%, transparent 25.5%, transparent 75%, #9999aa 75%, #9999aa), linear-gradient(60deg, #9999aa 25%, transparent 25.5%, transparent 75%, #9999aa 75%, #9999aa);
+  background-size: 80px 140px;
+  background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
+}
+
+/* line 113, ../scss/styles.scss */
+.ie9 #bg2px {
+  background: url(/graphics/global/bg-hex-2px-wht.png) 0 0 repeat;
+  opacity: 0.25;
+}
+
+/* line 114, ../scss/styles.scss */
+.ie9 #bg3px {
+  background: url(/graphics/global/bg-hex-3px-wht.png) 0 0 repeat;
+  opacity: 0.50;
+}
+
+/* line 115, ../scss/styles.scss */
+.ie9 #bg6px {
+  background: url(/graphics/global/bg-hex-6px-wht.png) 0 0 repeat;
+  opacity: 0.75;
+}
+
+/* line 117, ../scss/styles.scss */
+.for_fun {
+  background-color: #ddd;
+  background-image: linear-gradient(30deg, #666666 12%, transparent 12.5%, transparent 87%, #ffffff 87.5%, #ffffff), linear-gradient(150deg, #ffffff 12%, transparent 12.5%, transparent 87%, #666666 87.5%, #666666), linear-gradient(30deg, #666666 12%, transparent 12.5%, transparent 87%, #ffffff 87.5%, #ffffff), linear-gradient(150deg, #ffffff 12%, transparent 12.5%, transparent 87%, #666666 87.5%, #666666), linear-gradient(120deg, #9999aa 25%, transparent 25.5%, transparent 75%, #9999aa 75%, #9999aa), linear-gradient(60deg, #9999aa 25%, transparent 25.5%, transparent 75%, #9999aa 75%, #9999aa);
+  background-size: 80px 140px;
+  background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
+}
+
+/* HEADER & NAVIGATION *********************************** */
+/* line 132, ../scss/styles.scss */
+#header {
+  width: 82%;
+  max-width: 960px;
+  min-width: 800px;
+  height: auto;
+  margin: 0 auto;
+  padding: 0 0 26px;
+  z-index: 10;
+  position: relative;
+}
+
+/* line 133, ../scss/styles.scss */
+.title {
+  padding: 10px 0 0;
+  font-size: 5em;
+  text-shadow: #888888 0px -9px 9px, black 0px 0px 1px;
+  text-align: center;
+  font-family: CaviarDreams, "Caviar Dreams", sans-serif;
+  position: absolute;
+  z-index: 99;
+  width: 350px;
+  right: 0;
+}
+
+/* line 134, ../scss/styles.scss */
+.title a, .title a:hover {
+  color: #000;
+}
+
+/* line 135, ../scss/styles.scss */
+.home .title a:hover {
+  cursor: default;
+}
+
+/* line 15, ../scss/nav.scss */
+#nav {
+  float: left;
+  width: 410px;
+  height: 113px;
+  margin: 0 0 0 20px;
+  position: relative;
+  padding-top: 24px;
+}
+
+/* line 16, ../scss/nav.scss */
+#nav:before {
+  width: 90px;
+  height: 0;
+  border-color: #777777 transparent transparent;
+  border-width: 22px 13px 0;
+  border-style: solid solid none;
+  position: absolute;
+  left: -13px;
+  top: 0;
+}
+
+/* line 17, ../scss/nav.scss */
+#nav:after {
+  width: 90px;
+  height: 0;
+  border-color: transparent transparent #777777;
+  border-width: 0 13px 22px;
+  border-style: none solid solid;
+  position: absolute;
+  left: 92px;
+  top: 1px;
+}
+
+/* line 18, ../scss/nav.scss */
+.navUL {
+  font-size: 2em;
+  position: relative;
+}
+
+/* line 19, ../scss/nav.scss */
+.navUL:before {
+  width: 90px;
+  height: 0;
+  border-color: #777777 transparent transparent;
+  border-width: 22px 13px 0;
+  border-style: solid solid none;
+  position: absolute;
+  left: 92px;
+  top: -1px;
+}
+
+/* line 20, ../scss/nav.scss */
+.navLI {
+  float: right;
+  width: auto;
+  height: 44px;
+  line-height: 40px;
+  display: block;
+  position: absolute;
+  z-index: 5;
+  padding: 0;
+  font-size: 1.4em;
+  text-align: center;
+  margin: 0;
+  background: #777777;
+}
+
+/* line 21, ../scss/nav.scss */
+.navLI .navA {
+  display: block;
+  width: 86px;
+  height: 40px;
+  color: #fff;
+  position: relative;
+  z-index: 10;
+  text-shadow: 0px -1px 2px #666666, 0 0 1px white;
+  margin: 2px;
+  background: #cccccc;
+}
+
+/* line 22, ../scss/nav.scss */
+#nav .navLI.active {
+  z-index: 1;
+  text-shadow: 0px -1px 2px #444444, 0 0 1px white;
+}
+
+/* line 23, ../scss/nav.scss */
+.navLI .navA:hover {
+  text-shadow: 0px -1px 2px #333333, 0 0 1px white;
+}
+
+/* line 24, ../scss/nav.scss */
+#nav .navLI.active .navA, #nav .navLI.active .navA:hover {
+  text-shadow: 0 -1px 2px #333333, 0 0 1px white;
+  cursor: default;
+  background: #999999;
+}
+
+/* line 25, ../scss/nav.scss */
+#nav .navLI.active .navA:before, #nav .navLI.active .navA:after {
+  border-color: rgba(0, 0, 0, 0) #999999;
+}
+
+/* line 26, ../scss/nav.scss */
+.nav1 {
+  left: 0;
+  top: 0;
+}
+
+/* line 27, ../scss/nav.scss */
+.nav2 {
+  left: 105px;
+  top: 23px;
+}
+
+/* line 28, ../scss/nav.scss */
+.nav3 {
+  left: 210px;
+  top: 0;
+}
+
+/* line 29, ../scss/nav.scss */
+.nav1:before, .nav2:before, .nav3:before {
+  position: absolute;
+  left: -13px;
+  top: 0;
+  width: 0;
+  height: 0;
+  border-top: 22px solid transparent;
+  border-right: 13px solid #777777;
+  border-bottom: 22px solid transparent;
+  content: "";
+  display: block;
+}
+
+/* line 33, ../scss/nav.scss */
+.nav1:after, .nav2:after, .nav3:after {
+  position: absolute;
+  right: -13px;
+  top: 0;
+  width: 0;
+  height: 0;
+  border-top: 22px solid transparent;
+  border-left: 13px solid #777777;
+  border-bottom: 22px solid transparent;
+  content: "";
+  display: block;
+}
+
+/* line 37, ../scss/nav.scss */
+.nav1 .navA:before, .nav2 .navA:before, .nav3 .navA:before {
+  position: absolute;
+  left: -12px;
+  top: 0;
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-right: 12px solid #cccccc;
+  border-bottom: 20px solid transparent;
+  content: "";
+  display: block;
+}
+
+/* line 41, ../scss/nav.scss */
+.nav1 .navA:after, .nav2 .navA:after, .nav3 .navA:after {
+  position: absolute;
+  right: -12px;
+  top: 0;
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-left: 12px solid #cccccc;
+  border-bottom: 20px solid transparent;
+  content: "";
+  display: block;
+}
+
+/* line 45, ../scss/nav.scss */
+.subNavUL {
+  display: none;
+  position: absolute;
+  height: 44px;
+}
+
+/* line 46, ../scss/nav.scss */
+.nav1 .subNavUL {
+  top: 46px;
+  left: 0;
+}
+
+/* line 47, ../scss/nav.scss */
+.nav1B {
+  top: 23px;
+  left: 105px;
+}
+
+/* line 48, ../scss/nav.scss */
+.nav1C {
+  left: 210px;
+}
+
+/* line 49, ../scss/nav.scss */
+.nav2 .subNavUL {
+  top: 46px;
+}
+
+/* line 50, ../scss/nav.scss */
+.nav2B {
+  top: -23px;
+  left: 105px;
+}
+
+/* line 51, ../scss/nav.scss */
+.nav3 .subNavUL {
+  top: 46px;
+}
+
+/* line 52, ../scss/nav.scss */
+.nav3B {
+  top: -23px;
+  left: 105px;
+}
+
+/* line 53, ../scss/nav.scss */
+.nav3C {
+  top: -69px;
+  left: 105px;
+}
+
+/* line 57, ../scss/nav.scss */
+.subNavLI {
+  display: block;
+  width: 90px;
+  height: 44px;
+  font-size: 0.5em;
+  position: absolute;
+  z-index: 100;
+  background: #777777;
+}
+
+/* line 61, ../scss/nav.scss */
+.subNavLI:before {
+  position: absolute;
+  left: -13px;
+  top: 0;
+  width: 0;
+  height: 0;
+  border-top: 22px solid transparent;
+  border-right: 13px solid #777777;
+  border-bottom: 22px solid transparent;
+  content: "";
+  display: block;
+  z-index: 101;
+}
+
+/* line 62, ../scss/nav.scss */
+.subNavLI:after {
+  position: absolute;
+  right: -13px;
+  top: 0;
+  width: 0;
+  height: 0;
+  border-top: 22px solid transparent;
+  border-left: 13px solid #777777;
+  border-bottom: 22px solid transparent;
+  content: "";
+  display: block;
+  z-index: 101;
+}
+
+/* line 63, ../scss/nav.scss */
+.subNavLI .subNavA {
+  display: block;
+  height: 40px;
+  color: #fff;
+  text-shadow: 0 -2px 2px #333333, 0 0 1px white;
+  line-height: 40px;
+  display: relative;
+  background: #999999;
+  margin: 2px;
+  z-index: 102;
+}
+
+/* line 64, ../scss/nav.scss */
+.subNavLI .subNavA:hover {
+  text-shadow: 0 -2px 2px black, 0 0 1px white;
+}
+
+/* line 65, ../scss/nav.scss */
+.subNavA:before {
+  position: absolute;
+  left: -10px;
+  top: 2px;
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-right: 12px solid #999999;
+  border-bottom: 20px solid transparent;
+  content: "";
+  display: block;
+  z-index: 105;
+}
+
+/* line 66, ../scss/nav.scss */
+.subNavA:after {
+  position: absolute;
+  right: -10px;
+  top: 2px;
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-left: 12px solid #999999;
+  border-bottom: 20px solid transparent;
+  content: "";
+  display: block;
+  z-index: 105;
+}
+
+/* line 67, ../scss/nav.scss */
+.wrap.subNavLI .subNavA {
+  line-height: 17px;
+  padding-top: 2px;
+  height: 38px;
+}
+
+/* line 68, ../scss/nav.scss */
+.active.subNavLI {
+  background: #777777;
+  /*margin:2px $triW;*/
+}
+
+/* line 73, ../scss/nav.scss */
+.active.subNavLI .subNavA {
+  cursor: default;
+  background: #555555;
+}
+
+/* line 74, ../scss/nav.scss */
+.active.subNavLI .subNavA:hover {
+  text-shadow: 0 -2px 2px #333333, 0 0 1px white;
+}
+
+/* line 75, ../scss/nav.scss */
+.active.subNavLI .subNavA:before, .active.subNavLI .subNavA:after {
+  border-color: rgba(0, 0, 0, 0) #555555;
+}
+
+/* HOME PAGE  ******************************************** */
+/* line 79, ../scss/nav.scss */
+.home #nav {
+  float: none;
+  width: 600px;
+  height: 600px;
+  margin: 0 auto;
+  position: relative;
+  top: 132px;
+}
+
+/* line 80, ../scss/nav.scss */
+.home #nav:before, .home #nav:after, .home .navUL:before, .home .navUL:after {
+  display: none;
+}
+
+/* line 82, ../scss/nav.scss */
+.home .navLI {
+  float: none;
+  width: 400px;
+  height: 400px;
+  display: block;
+  background: none;
+  padding: 0;
+  font-size: 2em;
+  margin-left: 0;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  -webkit-box-shadow: 0px 0px 50px 5px #bbb;
+  box-shadow: 0px 0px 50px 5px #bbb;
+  position: absolute;
+  z-index: 5;
+}
+
+/* line 83, ../scss/nav.scss */
+.home .nav1 {
+  left: 0px;
+  top: 0px;
+}
+
+/* line 84, ../scss/nav.scss */
+.home .nav2 {
+  left: 200px;
+  top: 0px;
+}
+
+/* line 85, ../scss/nav.scss */
+.home .nav3 {
+  left: 100px;
+  top: 173px;
+}
+
+/* line 90, ../scss/nav.scss */
+.home .nav1:before, .home .nav2:before, .home .nav3:before,
+.home .nav1:after, .home .nav2:after, .home .nav3:after,
+.home .nav1 .navA:before, .home .nav2 .navA:before, .home .nav3 .navA:before,
+.home .nav1 .navA:after, .home .nav2 .navA:after, .home .nav3 .navA:after {
+  display: none;
+}
+
+/* line 91, ../scss/nav.scss */
+.home .navLI .navA {
+  display: block;
+  width: 360px;
+  height: 360px;
+  border-radius: 50%;
+  color: #fff;
+  position: relative;
+  z-index: 10;
+  box-shadow: 0px 0px 10px 5px #fff;
+  text-align: center;
+  font-size: 1.5em;
+  background: rgba(100, 100, 100, 0);
+  margin: 0;
+  -webkit-transition: background 1s;
+  transition: background 1s;
+}
+
+/* line 92, ../scss/nav.scss */
+.home .navLI .navA:hover {
+  z-index: 20;
+  background: rgba(100, 100, 100, 0.25);
+  background: -moz-radial-gradient(center, ellipse cover, rgba(99, 99, 99, 0) 0%, rgba(101, 101, 101, 0) 30%, rgba(105, 105, 105, 0.29) 79%, rgba(107, 107, 107, 0.65) 100%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(99, 99, 99, 0)), color-stop(30%, rgba(101, 101, 101, 0)), color-stop(79%, rgba(105, 105, 105, 0.29)), color-stop(100%, rgba(107, 107, 107, 0.65)));
+  background: -webkit-radial-gradient(center, ellipse cover, rgba(99, 99, 99, 0) 0%, rgba(101, 101, 101, 0) 30%, rgba(105, 105, 105, 0.29) 79%, rgba(107, 107, 107, 0.65) 100%);
+  background: -o-radial-gradient(center, ellipse cover, rgba(99, 99, 99, 0) 0%, rgba(101, 101, 101, 0) 30%, rgba(105, 105, 105, 0.29) 79%, rgba(107, 107, 107, 0.65) 100%);
+  background: -ms-radial-gradient(center, ellipse cover, rgba(99, 99, 99, 0) 0%, rgba(101, 101, 101, 0) 30%, rgba(105, 105, 105, 0.29) 79%, rgba(107, 107, 107, 0.65) 100%);
+  background: radial-gradient(ellipse at center, rgba(99, 99, 99, 0) 0%, rgba(101, 101, 101, 0) 30%, rgba(105, 105, 105, 0.29) 79%, rgba(107, 107, 107, 0.65) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00636363', endColorstr='#a66b6b6b',GradientType=1 );
+}
+
+/* line 101, ../scss/nav.scss */
+.ie9.home .navLI .navA:hover {
+  filter: none;
+  background: rgba(99, 99, 99, 0.25);
+}
+
+/* line 102, ../scss/nav.scss */
+.home .nav1 .navA {
+  left: 31px;
+  top: 31px;
+  line-height: 270px;
+  text-indent: -180px;
+  text-shadow: -5px -3px 6px #666666, 0 0 1px white;
+}
+
+/* line 103, ../scss/nav.scss */
+.home .nav1 .navA:hover {
+  text-shadow: -5px -3px 6px #333333, 0 0 1px white;
+}
+
+/* line 104, ../scss/nav.scss */
+.home .nav2 .navA {
+  left: 10px;
+  top: 31px;
+  line-height: 270px;
+  text-indent: 184px;
+  text-shadow: 5px -3px 6px #666666, 0 0 1px white;
+}
+
+/* line 105, ../scss/nav.scss */
+.home .nav2 .navA:hover {
+  text-shadow: 5px -3px 6px #333333, 0 0 1px white;
+}
+
+/* line 106, ../scss/nav.scss */
+.home .nav3 .navA {
+  left: 20px;
+  top: 5px;
+  line-height: 540px;
+  text-shadow: 0px 5px 6px #666, 0 0 1px #fff;
+}
+
+/* line 107, ../scss/nav.scss */
+.home .nav3 .navA:hover {
+  text-shadow: 0px 5px 6px #333, 0 0 1px #fff;
+}
+
+/* line 108, ../scss/nav.scss */
+.home .navLI .navA.clicked {
+  text-shadow: 0 0 500px #333, 0 0 1px #fff;
+}
+
+/* line 137, ../scss/styles.scss */
+.navUL {
+  font-family: sofiaProLtCdRg, Arial, sans-serif;
+}
+
+/* FOOTER ********************************************* */
+/* line 140, ../scss/styles.scss */
+#footer {
+  text-align: center;
+  font-size: 1.6em;
+  font-family: sofiaProLtCdRg, Arial, sans-serif;
+  line-height: 1.0em;
+  padding: 1em 0;
+  visibility: visible;
+  background: -moz-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0.93) 0%, rgba(0, 0, 0, 0) 51%, rgba(0, 0, 0, 0) 100%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(0, 0, 0, 0.93)), color-stop(51%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0)));
+  background: -webkit-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0.93) 0%, rgba(0, 0, 0, 0) 51%, rgba(0, 0, 0, 0) 100%);
+  background: -o-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0.93) 0%, rgba(0, 0, 0, 0) 51%, rgba(0, 0, 0, 0) 100%);
+  background: -ms-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0.93) 0%, rgba(0, 0, 0, 0) 51%, rgba(0, 0, 0, 0) 100%);
+  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.93) 0%, rgba(0, 0, 0, 0) 51%, rgba(0, 0, 0, 0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#00000000',GradientType=0 );
+}
+
+/* line 149, ../scss/styles.scss */
+.ie9 #footer {
+  filter: none;
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPHJhZGlhbEdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjUwJSIgY3k9IjUwJSIgcj0iNzUlIj4KICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSI1MiUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMCIvPgogICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMDAwMDAwIiBzdG9wLW9wYWNpdHk9IjAiLz4KICA8L3JhZGlhbEdyYWRpZW50PgogIDxyZWN0IHg9Ii01MCIgeT0iLTUwIiB3aWR0aD0iMTAxIiBoZWlnaHQ9IjEwMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+}
+
+/* line 150, ../scss/styles.scss */
+#footer .footer {
+  color: #fff;
+  padding: 0 8px;
+}
+
+/* HOME PAGE  ******************************************** */
+/* line 153, ../scss/styles.scss */
+.home {
+  background: #fff;
+  background: -moz-radial-gradient(center, ellipse cover, white 26%, #999999 100%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(26%, white), color-stop(100%, #999999));
+  background: -webkit-radial-gradient(center, ellipse cover, white 26%, #999999 100%);
+  background: -o-radial-gradient(center, ellipse cover, white 26%, #999999 100%);
+  background: -ms-radial-gradient(center, ellipse cover, white 26%, #999999 100%);
+  background: radial-gradient(ellipse at center, #ffffff 26%, #999999 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#666666',GradientType=0 );
+}
+
+/* line 162, ../scss/styles.scss */
+.ie9 .home {
+  filter: none;
+}
+
+/* line 163, ../scss/styles.scss */
+.home .navUL {
+  font-family: sofiaProLtCdRg, Arial, sans-serif;
+}
+
+/* line 164, ../scss/styles.scss */
+.home .title {
+  width: 100%;
+}
+
+/* line 165, ../scss/styles.scss */
+.home .homeA {
+  display: none;
+}
+
+/* line 166, ../scss/styles.scss */
+.home .content {
+  opacity: 0;
+}
+
+/* line 167, ../scss/styles.scss */
+.home #footer {
+  padding: 100px 0 0;
+  background: none;
+  visibility: hidden;
+}
+
+/* line 168, ../scss/styles.scss */
+.home .articles {
+  display: none;
+}
+
+/* SUB PAGES ******************************************** */
+/* line 171, ../scss/styles.scss */
+.article {
+  max-width: 890px;
+  width: 76%;
+  padding: 1em 2%;
+  margin: 0 auto 40px;
+  opacity: 0.97;
+  background: #fff;
+  z-index: 1;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  border-radius: 12px;
+  -webkit-box-shadow: 0px 0px 30px 10px rgba(30, 30, 30, 0.8);
+  -moz-box-shadow: 0px 0px 30px 10px rgba(30, 30, 30, 0.8);
+  box-shadow: 0px 0px 30px 10px rgba(30, 30, 30, 0.8);
+}
+
+/* line 175, ../scss/styles.scss */
+.article img {
+  max-width: 100%;
+}
+
+/* line 176, ../scss/styles.scss */
+.article ul {
+  margin-bottom: 1em;
+}
+
+/* line 177, ../scss/styles.scss */
+.article li {
+  margin-left: 3%;
+  padding-left: 1%;
+  list-style-type: circle;
+}
+
+/* line 179, ../scss/styles.scss */
+.col {
+  float: left;
+}
+
+/* line 180, ../scss/styles.scss */
+.col2 {
+  width: 45%;
+}
+
+/* line 182, ../scss/styles.scss */
+.colLeft {
+  margin-right: 10%;
+}
+
+/* NEWS CONTENT ******************************************** */
+/* line 185, ../scss/styles.scss */
+h2.date {
+  float: right;
+  /*padding-right:10px;*/
+}
+
+/* LOOK ******************************************** */
+/* line 189, ../scss/styles.scss */
+.imgLP img {
+  margin: 0 auto;
+  display: block;
+}

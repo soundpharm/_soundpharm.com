@@ -1,0 +1,157 @@
+/* COMMON TEXT STYLES ***************************************** */
+@font-face {
+  font-family: "CaviarDreams";
+  font-style: normal;
+  font-weight: normal;
+  src: url("/fonts/CaviarDreams-webfont.eot");
+  src: local("☺"), url("/fonts/CaviarDreams-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/CaviarDreams-webfont.svg#CaviarDreams") format("svg"), url("/fonts/CaviarDreams-webfont.woff") format("woff"), url("/fonts/CaviarDreams-webfont.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "CaviarDreamsBold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("/fonts/CaviarDreams_Bold-webfont.eot");
+  src: local("☺"), url("/fonts/CaviarDreams_Bold-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/CaviarDreams_Bold-webfont.woff") format("woff"), url("/fonts/CaviarDreams_Bold-webfont.ttf") format("truetype"), url("/fonts/CaviarDreams_Bold-webfont.svg#CaviarDreamsBold") format("svg");
+}
+
+@font-face {
+  font-family: 'sofiaProLtCdRg';
+  src: url("/fonts/SofiaProLiCond-webfont.eot");
+  src: url("/fonts/SofiaProLiCond-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/SofiaProLiCond-webfont.svg#sofiaProLtCdRg") format("svg"), url("/fonts/SofiaProLiCond-webfont.woff") format("woff"), url("/fonts/SofiaProLiCond-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* links  -------- */
+/* line 43, ../scss/fonts.scss */
+a {
+  color: #f00;
+  text-decoration: none;
+}
+/* line 45, ../scss/fonts.scss */
+a:link, a:active, a:hover {
+  color: #f00;
+  text-decoration: none;
+}
+/* line 46, ../scss/fonts.scss */
+a:hover {
+  color: #d00;
+}
+
+/* headlines */
+/* line 49, ../scss/fonts.scss */
+h1, h2, h3, h4, h5, h6 {
+  color: #000;
+  font-family: sofiaProLtCdRg, Arial, sans-serif;
+  line-height: 1.2em;
+}
+
+/* line 50, ../scss/fonts.scss */
+h1 {
+  font-size: 2.0em;
+  /* 24px */
+  color: #000;
+  margin-bottom: 0.25em;
+}
+
+/* line 51, ../scss/fonts.scss */
+h2 {
+  font-size: 1.5em;
+  /* 18px */
+  color: #666;
+  margin-bottom: 0.4em;
+}
+
+/* line 52, ../scss/fonts.scss */
+h3 {
+  font-size: 1.1em;
+  /* 14px */
+  color: #000;
+  margin-bottom: 0.25em;
+}
+
+/* line 53, ../scss/fonts.scss */
+h4 {
+  font-size: 1.0em;
+  /* 12px */
+  font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+  font-weight: normal;
+}
+
+/* line 54, ../scss/fonts.scss */
+h5 {
+  font-size: 1.0em;
+  /* 13px */
+  font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+}
+
+/* text  -------- */
+/* line 56, ../scss/fonts.scss */
+p {
+  margin-bottom: 1em;
+}
+
+/* line 57, ../scss/fonts.scss */
+.bold {
+  font-weight: bold;
+}
+
+/* line 58, ../scss/fonts.scss */
+.floatLeft {
+  float: left;
+}
+
+/* line 59, ../scss/fonts.scss */
+.floatRight {
+  float: right;
+}
+
+/* line 60, ../scss/fonts.scss */
+.clearBoth {
+  clear: both;
+}
+
+/* line 61, ../scss/fonts.scss */
+.clearLeft {
+  clear: left;
+}
+
+/* line 62, ../scss/fonts.scss */
+.clearRight {
+  clear: right;
+}
+
+/* line 63, ../scss/fonts.scss */
+.centered {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* image replacement  -------- */
+/* line 65, ../scss/fonts.scss */
+.ir {
+  display: block;
+  text-align: left;
+  overflow: hidden;
+  text-indent: -5000px;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+/* ClearFix For modern browsers  -------- */
+/* line 67, ../scss/fonts.scss */
+.cf {
+  zoom: 1;
+}
+/* line 68, ../scss/fonts.scss */
+.cf:before, .cf:after {
+  content: "";
+  display: block;
+  overflow: hidden;
+}
+/* line 69, ../scss/fonts.scss */
+.cf:after {
+  clear: both;
+}

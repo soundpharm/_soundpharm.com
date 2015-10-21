@@ -1,0 +1,18 @@
+// VENDOR PREFIXES *****************************************
+@mixin bgGradTopDown($top, $bottom) {
+	background-image: -webkit-gradient(linear, left top, left bottom, from($top), to($bottom));
+	background-image: -webkit-linear-gradient(top, $top, $bottom);
+	background-image:    -moz-linear-gradient(top, $top, $bottom);
+	background-image:      -o-linear-gradient(top, $top, $bottom);
+	background-image:         linear-gradient(to bottom, $top, $bottom);
+}
+@mixin borderRadius($values) {
+  -webkit-border-radius: $values;
+	 -moz-border-radius: $values;
+		  border-radius: $values;
+}
+@mixin boxShadow($values) {
+  -webkit-box-shadow: $values;
+	 -moz-box-shadow: $values;
+		  box-shadow: $values;
+}

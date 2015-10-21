@@ -1,0 +1,125 @@
+// NAVIGATION - HEXAGONS V1
+
+// NOT USED!!!!!!!!!!!!!!!!!!!!
+
+#nav {
+	float: left; 
+	width: 410px; 
+	height: 113px; 
+	margin: 0 0 0 20px; 
+	position: relative; 
+	padding-top: $navH/2 + $navGap; 
+	background: radial-gradient(ellipse at center center , rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 67%, rgba(0, 0, 0, 0) 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+	#nav:before {width:$navW; height:0; border-color:$navColor transparent transparent; border-width:$navH/2 $triW 0; border-style:solid solid none; position:absolute; left:-$triW; top:0;} 
+	#nav:after {width:$navW; height:0; border-color:transparent transparent $navColor; border-width:0 $triW $navH/2; border-style:none solid solid; position:absolute; left:$navW + $navGap; top:$navGap - 1;}
+	.navUL {
+		margin: 0;
+		left: auto;
+		min-height: auto;
+	}
+		.navUL:before {width:$navW; height:0; border-color:$navColor transparent transparent; border-width:$navH/2 $triW 0; border-style:solid solid none; position:absolute; left:$navW + $navGap; top:-1px;}
+		.navLI {
+			float:right; 
+			width:auto; 
+			height:$navH; 
+			line-height:$navH - $navGap*2; 
+			display:block; 
+			position:absolute; 
+			z-index:5; 
+			padding:0; 
+			font-size: 1.2em; 
+			text-align:center; 
+			margin:0; 
+			background: $navColor;
+		}
+		.navLI .navA {display:block; width:$navW - $navGap*2; height:$navH - $navGap*2; color:#fff; position:relative; z-index:10; text-shadow:0px -1px 2px #999, 0 0 1px #fff; margin:$navGap; background:$navInsetColor;}
+			#nav .navLI.active {z-index:1; text-shadow:0px -1px 2px #444, 0 0 1px #fff;}
+			.navLI .navA:hover {text-shadow:0px -1px 2px #333, 0 0 1px #fff;}
+			#nav .navLI.active .navA, #nav .navLI.active .navA:hover {text-shadow:0 -1px 2px #333, 0 0 1px #fff; cursor:default; background:$navColorOn;}
+			#nav .navLI.active .navA:before, #nav .navLI.active .navA:after {border-color:rgba(0, 0, 0, 0) $navColorOn;}
+			.nav1 {left:0; top:0; }
+			.nav2 {left:$navW + $triW + $navGap; top:$navH/2 + 1;}
+			.nav3 {left:$navW*2 + $triW*2 + $navGap*2; top:0;}
+				.nav1:before, .nav2:before, .nav3:before {
+					position:absolute; left:-$triW; top:0;
+					@include triangle(right, $triH, $triW, $navColor);
+				}
+				.nav1:after, .nav2:after, .nav3:after {
+					position:absolute; right:-$triW; top:0;
+					@include triangle(left, $triH, $triW, $navColor);
+				} 
+				.nav1 .navA:before, .nav2 .navA:before, .nav3 .navA:before {
+					position:absolute; left:-$triW + $navGap*0.5; top:0;
+					@include triangle(right, $triH - $navGap, $triW - $navGap*0.5, $navInsetColor);
+				}
+				.nav1 .navA:after, .nav2 .navA:after, .nav3 .navA:after {
+					position:absolute; right:-$triW + $navGap*0.5; top:0;
+					@include triangle(left, $triH - $navGap, $triW - $navGap*0.5, $navInsetColor);
+				}
+				.subNavUL {display:none; position:absolute; height:$navH;}
+					.nav1 .subNavUL {top:$navH + $navGap; left:0;}
+						.nav1B {top:$navH*0.5 + $navGap*0.5; left:$navW + $triW + $navGap;}
+						.nav1C {left:$navW*2 + $triW*2 + $navGap*2;}
+					.nav2 .subNavUL {top:$navH + $navGap;}
+						.nav2B {top:-$navH*0.5 + -$navGap*0.5; left:$navW + $triW + $navGap;}
+					.nav3 .subNavUL {top:$navH + $navGap;}
+						.nav3B {top:-$navH*0.5 + -$navGap*0.5; left:$navW + $triW + $navGap;}
+						.nav3C {top:-$navH*1.5 + -$navGap*1.5; left:$navW + $triW + $navGap;}
+					//.subNavUL:before {position:absolute; left:-$triW; top:0; @include triangle(right, $triH, $triW, $navColor);}
+					//.subNavUL:after {position:absolute; right:-$triW; top:0; @include triangle(left, $triH, $triW, $navColor);} 
+				//.active .subNavUL {display:block;}
+					.subNavLI {display:block; width:$navW; height:$navH; font-size:0.5em; position:absolute; z-index:100; background:$navColor;}
+						//.nav1A {top:$navH*1 + $navGap; left:0;}
+						//.nav2A {top:$navH + $navGap}
+						//.nav3A {top:$navH*0.5 + $navGap*0.5; left:$navW + $triW + $navGap;}
+						.subNavLI:before {position:absolute; left:-$triW; top:0; @include triangle(right, $triH, $triW, $navColor); z-index:101;}
+						.subNavLI:after {position:absolute; right:-$triW; top:0; @include triangle(left, $triH, $triW, $navColor); z-index:101;} 
+						.subNavLI .subNavA {display:block; height:$navH - $navGap*2; color:#fff; text-shadow:0 -2px 2px #333, 0 0 1px #fff; line-height:$navH - $navGap*2; display:relative; background:$navColorOn; margin:$navGap; z-index:102;}
+							.subNavLI .subNavA:hover {text-shadow:0 -2px 2px #000, 0 0 1px #fff;}
+								.subNavA:before {
+									position:absolute; 
+									left:-$triW + $navGap*1.5; 
+									top:$navGap; 
+									@include triangle(right, $triH - $navGap, $triW - $navGap*0.5, $navColorOn);
+									z-index:105;
+								}
+								.subNavA:after {
+									position:absolute; 
+									right:-$triW + $navGap*1.5; 
+									top:$navGap; 
+									@include triangle(left, $triH - $navGap, $triW - $navGap*0.5, $navColorOn); 
+									z-index:105;
+								} 
+								.wrap.subNavLI .subNavA {line-height:($navH - $navGap*5)/2; padding-top:$navGap; height:$navH - $navGap*3;}
+					.active.subNavLI {background:$navColor; /*margin:2px $triW;*/} 
+						//.active.subNavLI:before {position:absolute; left:-$triW + $navGap*0.5; top:0; @include triangle(right, $triH - $navGap, $triW - $navGap*0.5, $navSubColor);} 
+						//.active.subNavLI:after {position:absolute; right:-$triW + $navGap*0.5; top:0; @include triangle(left, $triH - $navGap, $triW - $navGap*0.5, $navSubColor);} 
+						//.active.subNavLI:first-child {margin-left:0;}
+						//.active.subNavLI:last-child {margin-right:0;}
+						.active.subNavLI .subNavA {cursor:default; background:$navSubColorOn;}
+							.active.subNavLI .subNavA:hover {text-shadow:0 -2px 2px #333, 0 0 1px #fff;}
+							.active.subNavLI .subNavA:before, .active.subNavLI .subNavA:after {border-color:rgba(0, 0, 0, 0) $navSubColorOn;}
+					
+	
+/* HOME PAGE  ******************************************** */
+	.home #nav {float:none; width:300px; height:300px; margin:0 auto; position:relative; top:32px; background:none;}
+		.home #nav:before, .home #nav:after, .home .navUL:before, .home .navUL:after, .home .subNavUL {display:none;}
+		.home .navUL {}
+			.home .navLI {float:none; width:200px; height:200px; display:block; background:none; padding:0; font-size:1em; margin-left:0; -webkit-border-radius:50%; border-radius:50%; -moz-background-clip:padding; -webkit-background-clip:padding-box; background-clip:padding-box; -webkit-box-shadow:0 0 15px 3px rgba(0,0,0,0.6); box-shadow:0 0 15px 3px rgba(0,0,0,0.6); position:absolute; z-index:5;}
+				.no-rgba .home .navLI {-webkit-box-shadow:0px 0px 15px 3px #888; box-shadow:0px 0px 15px 3px #888;}
+			.home .nav1 {left:0px; top:0px;}
+			.home .nav2 {left:100px; top:0px;}
+			.home .nav3 {left:50px; top:85px;}
+				.home .nav1:before, .home .nav2:before, .home .nav3:before,
+				.home .nav1:after, .home .nav2:after, .home .nav3:after,
+				.home .nav1 .navA:before, .home .nav2 .navA:before, .home .nav3 .navA:before,
+				.home .nav1 .navA:after, .home .nav2 .navA:after, .home .nav3 .navA:after
+					{display:none;}
+			.home .navLI .navA {display:block; width:180px; height:180px; border-radius:50%; color:#fff; position:relative; z-index:10; box-shadow:0px 0px 5px 4px #fff; text-align:center; font-size:1.5em; background:rgba(100, 100, 100, 0); margin:0; -webkit-transition:background 1s; transition:background 1s;}
+				.ie9.home .navLI .navA {color:#999;}
+				.home .nav1 .navA {left:15px; top:15px; line-height:135px; text-indent:-90px; text-shadow:-5px -3px 6px #333, 0 0 1px #fff;}
+				.home .nav2 .navA {left:5px; top:15px; line-height:135px; text-indent:92px; text-shadow:5px -3px 6px #333, 0 0 1px #fff;}
+				.home .nav3 .navA {left:10px; top:3px; line-height:275px; text-shadow:0px 5px 6px #333, 0 0 1px #fff;}
+				.home .navLI .navA.clicked {text-shadow:0 0 500px #000, 0 0 1px #fff;}
+

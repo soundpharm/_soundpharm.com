@@ -1,0 +1,622 @@
+{"images" : [
+		{
+			"image" : "/graphics/paintings/acrylic-lattisphere.jpg",
+			"caption" : "Lattisphere",
+			"thumbnail" : "/graphics/paintings/thumbs/acrylic-lattisphere.jpg",
+			"medium" : "Acrylic",
+			"size" : "9x12 inches",
+			"category" : "painting",
+			"notes" : "12/2008 - 2/2009",
+			"year" : "2009"
+		},
+		{
+			"image" : "/graphics/paintings/h20-hexaltus.jpg",
+			"caption" : "Hexaltus",
+			"thumbnail" : "/graphics/paintings/thumbs/h20-hexaltus.jpg",
+			"medium" : "Watercolor",
+			"size" : "9.5x5 inches",
+			"category" : "painting",
+			"notes" : "7/2009 - 11/25/2009",
+			"year" : "2009"
+		},
+		{
+			"image" : "/graphics/paintings/acrylic-cosmic-antenna.jpg",
+			"caption" : "My cosmic antenna finely tuned to the universal frequency",
+			"thumbnail" : "/graphics/paintings/thumbs/acrylic-cosmic-antenna.jpg",
+			"medium" : "Acrylic",
+			"size" : "11x14 inches",
+			"category" : "painting",
+			"notes" : "7/15/07 - 6/9/2009",
+			"year" : "2009"
+		},
+		{
+			"image" : "/graphics/paintings/acrylic-mandalattice.jpg",
+			"caption" : "Mandalattice",
+			"thumbnail" : "/graphics/paintings/thumbs/acrylic-mandalattice.jpg",
+			"medium" : "Acrylic",
+			"size" : "9x12 inches",
+			"category" : "painting",
+			"notes" : "Nov - Dec 2008",
+			"year" : "2008"
+		},
+		{
+			"image" : "/graphics/drawings/sketches-trillusions.jpg",
+			"caption" : "Trillusions",
+			"thumbnail" : "/graphics/drawings/thumbs/sketches-trillusions.jpg",
+			"medium" : "Pencil",
+			"size" : "8.5x11 inches",
+			"category" : "drawing",
+			"notes" : "Sketches done some time around 2001",
+			"year" : "2001"
+		},
+		{
+			"image" : "/graphics/paintings/acrylic-hexchange.jpg",
+			"caption" : "Hexchange",
+			"thumbnail" : "/graphics/paintings/thumbs/acrylic-hexchange.jpg",
+			"medium" : "Acrylic",
+			"size" : "8.5x11 inches",
+			"category" : "painting",
+			"notes" : "Nov, 2007 - Jan 2008 - for Tracy and Tina",
+			"year" : "2008"
+		},
+		{
+			"image" : "/graphics/paintings/acyrlic-black_swell_rising.jpg",
+			"caption" : "Black Swell Rising",
+			"thumbnail" : "/graphics/paintings/thumbs/acyrlic-black_swell_rising.jpg",
+			"medium" : "Acrylic",
+			"size" : "11x14 inches",
+			"category" : "painting",
+			"notes" : "September, 2007",
+			"year" : "2007"
+		},
+		{
+			"image" : "/graphics/paintings/h2o-solcryst.jpg",
+			"caption" : "Solcryst",
+			"thumbnail" : "/graphics/paintings/thumbs/h2o-solcryst.jpg",
+			"medium" : "Watercolor",
+			"size" : "9x12 inches",
+			"category" : "painting",
+			"notes" : "Drawing started summer, 2006, painting finished summer, 2007",
+			"year" : "2007"
+		},
+		{
+			"image" : "/graphics/digital/neuraural-cover-bkgd_fl.jpg",
+			"caption" : "Neuraural - cover background",
+			"thumbnail" : "/graphics/digital/thumbs/neuraural-cover-bkgd.jpg",
+			"medium" : "Photoshop",
+			"size" : "",
+			"category" : "digital",
+			"notes" : "Jan., 2007 - background image used for the \"neuraural\" CD cover",
+			"year" : "2007"
+		},
+		{
+			"image" : "/graphics/digital/neuraural-cover-front.jpg",
+			"caption" : "Neuraural - front cover",
+			"thumbnail" : "/graphics/digital/thumbs/neuraural-cover-front.jpg",
+			"medium" : "Photoshop",
+			"size" : "",
+			"category" : "digital",
+			"notes" : "Jan., 2007 - front cover image for CD",
+			"year" : "2007"
+		},
+		{
+			"image" : "/graphics/paintings/h2O-4-3-05-for-Ezlbth-Tby.jpg",
+			"caption" : "Glaastar",
+			"thumbnail" : "/graphics/paintings/thumbs/h2O-4-3-05-for-Ezlbth-Tby.jpg",
+			"medium" : "Watercolor",
+			"size" : "6x6 inches",
+			"category" : "painting",
+			"notes" : "Spring, 2005 - Wedding gift for Elisabeth and Toby",
+			"year" : "2005"
+		},
+		{
+			"image" : "/graphics/paintings/h20-hexleglaas.jpg",
+			"caption" : "Hexleglaas",
+			"thumbnail" : "/graphics/paintings/thumbs/h20-hexleglaas.jpg",
+			"medium" : "Watercolor",
+			"size" : "4x6 inches",
+			"category" : "painting",
+			"notes" : "August, 2002",
+			"year" : "2002"
+		},
+		{
+			"image" : "/graphics/paintings/weldingcolor.jpg",
+			"caption" : "Weldingcolor",
+			"thumbnail" : "/graphics/paintings/thumbs/weldingcolor.jpg",
+			"medium" : "Watercolor",
+			"size" : "8x10 inches",
+			"category" : "painting",
+			"notes" : "June/July, 2001, wedding gift for my sister. Used for elements in my first two CD covers.",
+			"year" : "2001"
+		},
+		{
+			"image" : "/graphics/paintings/h20-firewaterflower.jpg",
+			"caption" : "Firewater Flower",
+			"thumbnail" : "/graphics/paintings/thumbs/h20-firewaterflower.jpg",
+			"medium" : "Watercolor",
+			"size" : "9x12 inches",
+			"category" : "painting",
+			"notes" : "Fall 2000 - Winter 2001",
+			"year" : "2001"
+		},
+		{
+			"image" : "/graphics/paintings/h20-oupt.jpg",
+			"caption" : "Oupt",
+			"thumbnail" : "/graphics/paintings/thumbs/h20-oupt.jpg",
+			"medium" : "Watercolor",
+			"size" : "4x6 inches",
+			"category" : "painting",
+			"notes" : "Late 2002",
+			"year" : "2002"
+		},
+		{
+			"image" : "/graphics/paintings/h20-tripol.jpg",
+			"caption" : "Tripol",
+			"thumbnail" : "/graphics/paintings/thumbs/h20-tripol.jpg",
+			"medium" : "Watercolor",
+			"size" : "4x6 inches",
+			"category" : "painting",
+			"notes" : "May, 2003",
+			"year" : "2003"
+		},
+		{
+			"image" : "/graphics/paintings/spirlinka-watercolor-4x6.jpg",
+			"caption" : "Spirlinka",
+			"thumbnail" : "/graphics/paintings/thumbs/spirlinka-watercolor-4x6.jpg",
+			"medium" : "Watercolor",
+			"size" : "4x6 inches",
+			"category" : "painting",
+			"notes" : "Late 2000",
+			"year" : "2000"
+		},
+		{
+			"image" : "/graphics/paintings/oil-interpollin.jpg",
+			"caption" : "Interpollin",
+			"thumbnail" : "/graphics/paintings/thumbs/oil-interpollin.jpg",
+			"medium" : "Oil on canvas",
+			"size" : "14x16 inches",
+			"category" : "painting",
+			"notes" : "July 1999, gift for Nikki.",
+			"year" : "1999"
+		},
+		{
+			"image" : "/graphics/paintings/h20-biplicity.jpg",
+			"caption" : "Biplicity",
+			"thumbnail" : "/graphics/paintings/thumbs/h20-biplicity.jpg",
+			"medium" : "Watercolor",
+			"size" : "18x24 inches",
+			"category" : "painting",
+			"notes" : "Dec 1997, last watercolor for class.",
+			"year" : "1997"
+		},
+		{
+			"image" : "/graphics/paintings/h20-zenterpolation.jpg",
+			"caption" : "Zenterpolation",
+			"thumbnail" : "/graphics/paintings/thumbs/h20-zenterpolation.jpg",
+			"medium" : "Watercolor",
+			"size" : "16x20 inches",
+			"category" : "painting",
+			"notes" : "Fall 1998, first painting after CCAD.",
+			"year" : "1998"
+		},
+		{
+			"image" : "/graphics/digital/autochaosoniq_front.jpg",
+			"caption" : "Autochaosoniq",
+			"thumbnail" : "/graphics/digital/thumbs/autochaosoniq_front.jpg",
+			"medium" : "Photoshop",
+			"size" : "",
+			"category" : "digital",
+			"notes" : "CD cover for my first studio production.",
+			"year" : "2002"
+		},
+		{
+			"image" : "/graphics/digital/autochaosoniq_back.jpg",
+			"caption" : "Autochaosoniq - back",
+			"thumbnail" : "/graphics/digital/thumbs/autochaosoniq_back.jpg",
+			"medium" : "Watercolor/Photoshop",
+			"size" : "",
+			"category" : "painting",
+			"notes" : "Back cover for my first studio production. Mostly from scanned watercolor.",
+			"year" : "2002"
+		},
+		{
+			"image" : "/graphics/paintings/lynxus-watercolor-2x3.jpg",
+			"caption" : "Lynxus",
+			"thumbnail" : "/graphics/paintings/thumbs/lynxus-watercolor-2x3.jpg",
+			"medium" : "Watercolor",
+			"size" : "2x3 inches",
+			"category" : "painting",
+			"notes" : "April 12, 2001, for my wife Nikki.",
+			"year" : "2001"
+		},
+		{
+			"image" : "/graphics/digital/interlynxus.jpg",
+			"caption" : "Interlynxus",
+			"thumbnail" : "/graphics/digital/thumbs/interlynxus.jpg",
+			"medium" : "Watercolor/Photoshop",
+			"size" : "",
+			"category" : "digital",
+			"notes" : "August 2002, from scanned watercolor \"lynxus\"",
+			"year" : "2002"
+		},
+		{
+			"image" : "/graphics/digital/inceprication.jpg",
+			"caption" : "Inceprication",
+			"thumbnail" : "/graphics/digital/thumbs/inceprication.jpg",
+			"medium" : "Watercolor/digital photo/Photoshop",
+			"size" : "",
+			"category" : "digital",
+			"notes" : "Cover for my first live CD, \"inceprication - live @ skylab\".",
+			"year" : "2001"
+		},
+		{
+			"image" : "/graphics/digital/interpul-1.jpg",
+			"caption" : "Interpul",
+			"thumbnail" : "/graphics/digital/thumbs/interpul-1.jpg",
+			"medium" : "Photoshop",
+			"size" : "",
+			"category" : "digital",
+			"notes" : "Early 2002, digital interpretation of interpolation.",
+			"year" : "2002"
+		},
+		{
+			"image" : "/graphics/paintings/oil-wasnow.jpg",
+			"caption" : " Wasnow",
+			"thumbnail" : "/graphics/paintings/thumbs/oil-wasnow.jpg",
+			"medium" : "Oil on canvas",
+			"size" : "30x30 inches",
+			"category" : "painting",
+			"notes" : "Nov-Dec 1994, not for class!",
+			"year" : "1994"
+		},
+		{
+			"image" : "/graphics/paintings/h20-cheqsquirm.jpg",
+			"caption" : "Cheqsquirm",
+			"thumbnail" : "/graphics/paintings/thumbs/h20-cheqsquirm.jpg",
+			"medium" : "Watercolor",
+			"size" : "8x10 inches",
+			"category" : "painting",
+			"notes" : "Late Spring 1997, for class.",
+			"year" : "1997"
+		},
+		{
+			"image" : "/graphics/paintings/h20-in_finite.jpg",
+			"caption" : "In Finite",
+			"thumbnail" : "/graphics/paintings/thumbs/h20-in_finite.jpg",
+			"medium" : "Watercolor",
+			"size" : "10x13 inches",
+			"category" : "painting",
+			"notes" : "Late Spring 1997, for class.",
+			"year" : "1997"
+		},
+		{
+			"image" : "/graphics/paintings/h20-triptiq2-xentury.jpg",
+			"caption" : "Xentury",
+			"thumbnail" : "/graphics/paintings/thumbs/h20-triptiq2-xentury.jpg",
+			"medium" : "Watercolor",
+			"size" : "5x10 inches",
+			"category" : "painting",
+			"notes" : "Spring 1997, for class. Part 1 of 3.",
+			"year" : "1997"
+		},
+		{
+			"image" : "/graphics/paintings/h20-triptiq3-cractal.jpg",
+			"caption" : "Cractal",
+			"thumbnail" : "/graphics/paintings/thumbs/h20-triptiq3-cractal.jpg",
+			"medium" : "Watercolor",
+			"size" : "6x10 inches",
+			"category" : "painting",
+			"notes" : "Spring 1997, for class. Part 2 of 3.",
+			"year" : "1997"
+		},
+		{
+			"image" : "/graphics/paintings/h20-triptiq1-underflorin.jpg",
+			"caption" : "Underflorin",
+			"thumbnail" : "/graphics/paintings/thumbs/h20-triptiq1-underflorin.jpg",
+			"medium" : "Watercolor",
+			"size" : "5x10 inches",
+			"category" : "painting",
+			"notes" : "Spring 1997, for class. Part 3 of 3.",
+			"year" : "1997"
+		},
+		{
+			"image" : "/graphics/drawings/charcoal-mehdulson.jpg",
+			"caption" : "Mehdulson",
+			"thumbnail" : "/graphics/drawings/thumbs/charcoal-mehdulson.jpg",
+			"medium" : "Charcoal",
+			"size" : "9x12 inches",
+			"category" : "drawing",
+			"notes" : "1999/2000 ? Personal sketch, probably done during animation class lecture.",
+			"year" : "1999"
+		},
+		{
+			"image" : "/graphics/paintings/h20-conflektion.jpg",
+			"caption" : "Conflektion",
+			"thumbnail" : "/graphics/paintings/thumbs/h20-conflektion.jpg",
+			"medium" : "Watercolor",
+			"size" : "18x24 inches",
+			"category" : "painting",
+			"notes" : "Early Spring 1997, for class.",
+			"year" : "1997"
+		},
+		{
+			"image" : "/graphics/digital/bludonography.jpg",
+			"caption" : "Bludonography",
+			"thumbnail" : "/graphics/digital/thumbs/bludonography.jpg",
+			"medium" : "Photoshop",
+			"size" : "",
+			"category" : "digital",
+			"notes" : "Dec. 1996 - First in Series of Landscapesque digital sketches.",
+			"year" : "1996"
+		},
+		{
+			"image" : "/graphics/digital/gilyankriss.jpg",
+			"caption" : "Gilyankriss",
+			"thumbnail" : "/graphics/digital/thumbs/gilyankriss.jpg",
+			"medium" : "Photoshop",
+			"size" : "",
+			"category" : "digital",
+			"notes" : "Fall 1998",
+			"year" : "1998"
+		},
+		{
+			"image" : "/graphics/digital/schulobeinyoyt.jpg",
+			"caption" : "Schulobeinyoyt",
+			"thumbnail" : "/graphics/digital/thumbs/schulobeinyoyt.jpg",
+			"medium" : "Photoshop",
+			"size" : "",
+			"category" : "digital",
+			"notes" : "Fall 1998",
+			"year" : "1998"
+		},
+		{
+			"image" : "/graphics/digital/shunxpy.jpg",
+			"caption" : "Shunxpy",
+			"thumbnail" : "/graphics/digital/thumbs/shunxpy.jpg",
+			"medium" : "Scanned Reduction Print/Photoshop",
+			"size" : "",
+			"category" : "digital",
+			"notes" : "Oct. 1996. - I scanned a linoleum reduction print and played with it in Photoshop.",
+			"year" : "1996"
+		},
+		{
+			"image" : "/graphics/digital/uniphorlmn.jpg",
+			"caption" : "Uniplorlmn",
+			"thumbnail" : "/graphics/digital/thumbs/uniphorlmn.jpg",
+			"medium" : "Photoshop",
+			"size" : "",
+			"category" : "digital",
+			"notes" : "Mar. 1997",
+			"year" : "1997"
+		},
+		{
+			"image" : "/graphics/digital/squirtoxz.jpg",
+			"caption" : "Squirtoxz",
+			"thumbnail" : "/graphics/digital/thumbs/squirtoxz.jpg",
+			"medium" : "Scanned Reduction Print/Photoshop",
+			"size" : "",
+			"category" : "digital",
+			"notes" : "Dec. 1996 - Another from the scanned linoleum reduction print I played with in Photoshop.",
+			"year" : "1996"
+		},
+		{
+			"image" : "/graphics/digital/poyntunin.jpg",
+			"caption" : "Poyntunin",
+			"thumbnail" : "/graphics/digital/thumbs/poyntunin.jpg",
+			"medium" : "Painter/Photoshop",
+			"size" : "",
+			"category" : "digital",
+			"notes" : "Mar. 1997 - \"Painted\" in Meta Creations Painter with a lot of cloning.",
+			"year" : "1997"
+		},
+		{
+			"image" : "/graphics/digital/nonton.jpg",
+			"caption" : "Nonton",
+			"thumbnail" : "/graphics/digital/thumbs/nonton.jpg",
+			"medium" : "Photoshop",
+			"size" : "",
+			"category" : "digital",
+			"notes" : "Jun. 1996",
+			"year" : "1996"
+		},
+		{
+			"image" : "/graphics/digital/haliceophpere.jpg",
+			"caption" : "Haliceophpere",
+			"thumbnail" : "/graphics/digital/thumbs/haliceophpere.jpg",
+			"medium" : "Photoshop",
+			"size" : "",
+			"category" : "digital",
+			"notes" : "Nov. 20, 1996",
+			"year" : "1996"
+		},
+		{
+			"image" : "/graphics/digital/pondcho.jpg",
+			"caption" : "Pondcho",
+			"thumbnail" : "/graphics/digital/thumbs/pondcho.jpg",
+			"medium" : "Photoshop",
+			"size" : "",
+			"category" : "digital",
+			"notes" : "Early Spring 1997",
+			"year" : "1997"
+		},
+		{
+			"image" : "/graphics/digital/hypnoynt.jpg",
+			"caption" : "Hypnoynt",
+			"thumbnail" : "/graphics/digital/thumbs/hypnoynt.jpg",
+			"medium" : "Photoshop",
+			"size" : "",
+			"category" : "digital",
+			"notes" : "Spring 1997",
+			"year" : "1997"
+		},
+		/*{
+			"image" : "/graphics/digital/moonsk.jpg",
+			"caption" : "Moonske",
+			"thumbnail" : "/graphics/digital/thumbs/moonsk.jpg",
+			"medium" : "Photoshop",
+			"size" : "",
+			"category" : "digital",
+			"notes" : "Spring 1997",
+			"year" : "1997"
+		},
+		{
+			"image" : "/graphics/digital/skillnette.jpg",
+			"caption" : "Skillnettet",
+			"thumbnail" : "/graphics/digital/thumbs/skillnette.jpg",
+			"medium" : "Photoshop",
+			"size" : "",
+			"category" : "digital",
+			"notes" : "Late Spring 1997",
+			"year" : "1997"
+		},*/
+		{
+			"image" : "/graphics/digital/ekcstinomyinto.jpg",
+			"caption" : "Eckstinomyinto",
+			"thumbnail" : "/graphics/digital/thumbs/ekcstinomyinto.jpg",
+			"medium" : "Photoshop",
+			"size" : "",
+			"category" : "digital",
+			"notes" : "Summer 2000",
+			"year" : "2000"
+		},
+		{
+			"image" : "/graphics/digital/spfornm.jpg",
+			"caption" : "Spfornm",
+			"thumbnail" : "/graphics/digital/thumbs/spfornm.jpg",
+			"medium" : "Photoshop",
+			"size" : "",
+			"category" : "digital",
+			"notes" : "Mar. 1997",
+			"year" : "1997"
+		},
+		{
+			"image" : "/graphics/digital/spliq.jpg",
+			"caption" : "Spliq",
+			"thumbnail" : "/graphics/digital/thumbs/spliq.jpg",
+			"medium" : "Photoshop",
+			"size" : "",
+			"category" : "digital",
+			"notes" : "Dec. 1996",
+			"year" : "1996"
+		},
+		{
+			"image" : "/graphics/digital/brightershadeofdeath.jpg",
+			"caption" : "Brighter Shade of Death",
+			"thumbnail" : "/graphics/digital/thumbs/brightershadeofdeath.jpg",
+			"medium" : "Photoshop",
+			"size" : "",
+			"category" : "digital",
+			"notes" : "Fall 1996",
+			"year" : "1996"
+		},
+		{
+			"image" : "/graphics/digital/damuggin.jpg",
+			"caption" : "1 4damuggin",
+			"thumbnail" : "/graphics/digital/thumbs/damuggin.jpg",
+			"medium" : "Painter",
+			"size" : "",
+			"category" : "digital",
+			"notes" : "Fall 1996 - Created in Meta Creations Painter.",
+			"year" : "1996"
+		},
+		{
+			"image" : "/graphics/digital/hulujulup.jpg",
+			"caption" : "Hulujulup",
+			"thumbnail" : "/graphics/digital/thumbs/hulujulup.jpg",
+			"medium" : "Photoshop",
+			"size" : "",
+			"category" : "digital",
+			"notes" : "Summer 2000",
+			"year" : "2000"
+		},
+		{
+			"image" : "/graphics/digital/ikkination.jpg",
+			"caption" : "Entranzonik - Album Cover",
+			"thumbnail" : "/graphics/digital/thumbs/ikkination.jpg",
+			"medium" : "Photoshop",
+			"size" : "",
+			"category" : "digital",
+			"notes" : "Fall 2000 - Limited run of my first CD \"Ikkination\", a short collection of abrasive digital songs.",
+			"year" : "2000"
+		},
+		{
+			"image" : "/graphics/drawings/liquasketch.jpg",
+			"caption" : "Liquasketch",
+			"thumbnail" : "/graphics/drawings/thumbs/liquasketch.jpg",
+			"medium" : "Pencil",
+			"size" : "8.5x11 inches",
+			"category" : "drawing",
+			"notes" : "Fall 1996 - A scan of a page in my sketch book. Unfinished.",
+			"year" : "1996"
+		},
+		{
+			"image" : "/graphics/drawings/phastar.jpg",
+			"caption" : "Phastar",
+			"thumbnail" : "/graphics/drawings/thumbs/phastar.jpg",
+			"medium" : "Pencil",
+			"size" : "4x9 inches",
+			"category" : "drawing",
+			"notes" : "Summer 1994 - An early drawing from the summer after my first year of college.",
+			"year" : "1994"
+		},
+		{
+			"image" : "/graphics/photography/through.jpg",
+			"caption" : "Through",
+			"thumbnail" : "/graphics/photography/through.jpg",
+			"medium" : "Photograph",
+			"size" : "8x10 inches",
+			"category" : "photograph",
+			"notes" : "Nov. 1995 - An old farm house in Morrow County.",
+			"year" : "1995"
+		},
+		{
+			"image" : "/graphics/digital/poloochn.jpg",
+			"caption" : "Poloochn",
+			"thumbnail" : "/graphics/digital/thumbs/poloochn.jpg",
+			"medium" : "Photoshop",
+			"size" : "",
+			"category" : "digital",
+			"notes" : "Jan. 1997 - digital sketch.",
+			"year" : "1997"
+		},
+		{
+			"image" : "/graphics/digital/dihsk.jpg",
+			"caption" : "Dihsk",
+			"thumbnail" : "/graphics/digital/thumbs/dihsk.jpg",
+			"medium" : "Photoshop",
+			"size" : "",
+			"category" : "digital",
+			"notes" : "Dec. 1997 - An evolved still from an animation piece.",
+			"year" : "1997"
+		},
+		{
+			"image" : "/graphics/digital/dotzikophy.jpg",
+			"caption" : "Dotzikophy",
+			"thumbnail" : "/graphics/digital/thumbs/dotzikophy.jpg",
+			"medium" : "Found photo test print / Photoshop",
+			"size" : "4x6 inches",
+			"category" : "digital",
+			"notes" : "Jun. 1998 - The dots were on some kind of test print for a commercial enlarger.",
+			"year" : "1998"
+		},
+		{
+			"image" : "/graphics/digital/skilln.jpg",
+			"caption" : "Skilln",
+			"thumbnail" : "/graphics/digital/thumbs/skilln.jpg",
+			"medium" : "Photoshop",
+			"size" : "",
+			"category" : "digital",
+			"notes" : "Late Spring 1997",
+			"year" : "1997"
+		},
+		{
+			"image" : "/graphics/digital/dimm.jpg",
+			"caption" : "Dimm",
+			"thumbnail" : "/graphics/digital/thumbs/dimm.jpg",
+			"medium" : "Photoshop",
+			"size" : "",
+			"category" : "digital",
+			"notes" : "Fall 1996",
+			"year" : "1996"
+		}
+]}

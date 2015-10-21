@@ -1,0 +1,77 @@
+// MEDIUM SCREEN STYLES FOR SOUNDPHARM.COM //////////////////////////////
+
+/* GLOBAL STRUCTURE ***************************************** */
+body {}
+#container {
+	width:100%;
+}
+	.no-js #container {background:url(/graphics/global/bg-hex-6px-wht.png) 0 0 repeat;}
+	//#content, .content {}
+	//.content #content {}
+
+/* HEADER & NAVIGATION *********************************** */
+//#header {max-width:950px; width:85%; height:40px; margin:0 auto; padding:0 8% 60px 8%; z-index:10; position:relative;}
+//	.title {float:left; font-size:3.6em; text-shadow:#aaa 3px 4px 2px, #000 0px 0px 1px; margin-bottom:0;}
+
+//#header {max-width:100%; min-width:100%; width:100%; padding:0 0 1rem;}
+//.title {font-size:2.5em; width:100%; position:relative; padding:0.5rem 0 0;}
+#header {padding:0 0 1rem;}
+.title {
+	font-size: 4.5rem; 
+	//position: absolute; 
+	//width: 175px; 
+	//padding: 0.5rem 0 0; 
+	//right: 150px;
+	//text-shadow: 5px -9px 9px #000, 0px 0px 1px #000; 
+	//background: transparent;
+	//@include boxShadow(0 0 0 transparent);
+}
+	.title a, .title a:hover {color:#000;}
+	.home .title a:hover {cursor:default;}
+	.navUL {font-family:$sofiaProLtCdRg;}
+
+/* FOOTER ********************************************* */
+#footer {
+	font-size:1.2em; 
+	line-height:1.1em; 
+	padding:2.5em 0;
+}
+	
+/* HOME PAGE  ******************************************** */
+
+	.home .navUL {font-family:$sofiaProLtCdRg;}
+	.home .homeA {display:none;}
+	.home .content {opacity:0;}
+	.home #footer {padding:100px 0 0; background:none; visibility:hidden;}
+	.home .articles {display:none;}
+	.home .parallax {opacity:0.4;}
+
+/* SUB PAGES ******************************************** */
+.article {
+	max-width:890px; width:76%; padding:1em 2%; margin:0 auto 40px; opacity:0.97; background:#fff; z-index:1; -moz-background-clip:padding; -webkit-background-clip:padding-box; background-clip:padding-box; 
+	@include borderRadius(12px);
+	@include boxShadow(0px 0px 30px 10px rgba(30, 30, 30, 0.8));
+	}
+	.article img {
+		max-width:100%;
+	}
+	.article ul {margin-bottom:1em;}
+		.article li {margin-left:3%; padding-left:1%; list-style-type:circle;}
+
+.col {float:left;}
+	.col2 {width:45%;}
+		.colRight {}
+		.colLeft {margin-right:10%;}
+
+/* NEWS CONTENT ******************************************** */
+h2.date {float:right; /*padding-right:10px;*/}
+//.news .article h1, .news .article p {padding-left:10px; padding-right:10px;}
+
+/* LOOK ******************************************** */
+.imgLP img {margin:0 auto; display:block;}
+
+/* LISTEN ******************************************** */
+	.music-cover {
+		width: auto;
+		height: auto;
+	}

@@ -1,0 +1,71 @@
+// FONT STYLES FOR SOUNDPHARM.COM //////////////////////////////
+
+/* COMMON TEXT STYLES ***************************************** */
+// FONTS  -------- */
+	@font-face {
+		font-family: "CaviarDreams";
+		font-style: normal;
+		font-weight: normal;
+		src: url("/fonts/CaviarDreams-webfont.eot");
+		src: local("☺"), 
+			url('/fonts/CaviarDreams-webfont.eot?#iefix') format('embedded-opentype'),
+			url("/fonts/CaviarDreams-webfont.svg#CaviarDreams") format("svg"),
+			url("/fonts/CaviarDreams-webfont.woff") format("woff"), 
+			url("/fonts/CaviarDreams-webfont.ttf") format("truetype");
+		}
+	@font-face {
+		font-family: "CaviarDreamsBold";
+		font-style: normal;
+		font-weight: normal;
+		src: url("/fonts/CaviarDreams_Bold-webfont.eot");
+		src: local("☺"),
+			url('/fonts/CaviarDreams_Bold-webfont.eot?#iefix') format('embedded-opentype'),
+			url('/fonts/CaviarDreams_Bold-webfont.woff') format('woff'),
+			url('/fonts/CaviarDreams_Bold-webfont.ttf') format('truetype'),
+			url('/fonts/CaviarDreams_Bold-webfont.svg#CaviarDreamsBold') format('svg');
+		}
+	@font-face {
+		font-family: 'sofiaProLtCdRg';
+		src: url('/fonts/SofiaProLiCond-webfont.eot');
+		src: url('/fonts/SofiaProLiCond-webfont.eot?#iefix') format('embedded-opentype'),
+			url('/fonts/SofiaProLiCond-webfont.svg#sofiaProLtCdRg') format('svg'),
+			url('/fonts/SofiaProLiCond-webfont.woff') format('woff'),
+			url('/fonts/SofiaProLiCond-webfont.ttf') format('truetype');
+		font-weight: normal;
+		font-style: normal;
+		}
+	$Arial : Arial,geneva,sans-serif;
+	$sofiaProLtCdRg : sofiaProLtCdRg,Arial,sans-serif;
+	$Verdana : Verdana, Geneva, Arial, Helvetica, sans-serif;
+	$CaviarDreams : CaviarDreams, "Caviar Dreams", sans-serif;
+
+/* links  -------- */
+a {
+	color:#f00; text-decoration:none;
+	&:link, &:active, &:hover {color:#f00; text-decoration:none;}
+	&:hover {color:#d00;}
+}
+/* headlines */
+	h1,h2,h3,h4,h5,h6 {color:#000;font-family:$sofiaProLtCdRg;line-height:1.2em;}
+	h1 {font-size:2.0em; /* 24px */ color:#000; margin-bottom:0.25em ;}
+	h2 {font-size:1.5em; /* 18px */ color:#666; margin-bottom:0.4em;}
+	h3 {font-size:1.1em; /* 14px */ color:#000; margin-bottom:0.25em;}
+	h4 {font-size:1.0em; /* 12px */ font-family:$Verdana; font-weight:normal;}
+	h5 {font-size:1.0em; /* 13px */ font-family:$Verdana;}
+/* text  -------- */
+	p {margin-bottom:1em;}
+	.bold {font-weight:bold;}
+	.floatLeft {float:left;}
+	.floatRight {float:right;}
+	.clearBoth {clear:both;}
+	.clearLeft {clear:left;}
+	.clearRight {clear:right;}
+	.centered {text-align:center; margin-left:auto; margin-right:auto;}
+	/* image replacement  -------- */
+	.ir {display:block;text-align:left;overflow:hidden;text-indent:-5000px;background-position:0 0;background-repeat:no-repeat;}
+	/* ClearFix For modern browsers  -------- */
+	.cf {
+		&:before, &:after {content:"";display:block;overflow:hidden;}
+		&:after {clear:both;}
+		zoom:1;
+	}

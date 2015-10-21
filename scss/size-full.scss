@@ -1,0 +1,82 @@
+// LARGE SCREEN STYLES FOR SOUNDPHARM.COM //////////////////////////////
+
+/* GLOBAL STRUCTURE ***************************************** */
+body {}
+#container {
+	 min-width:800px;
+}
+	.no-js #container {background:url(/graphics/global/bg-hex-6px-wht.png) 0 0 repeat;}
+	//#content, .content {}
+	//.content #content {}
+
+/* HEADER & NAVIGATION *********************************** */
+//#header {max-width:950px; width:85%; height:40px; margin:0 auto; padding:0 8% 60px 8%; z-index:10; position:relative;}
+//	.title {float:left; font-size:3.6em; text-shadow:#aaa 3px 4px 2px, #000 0px 0px 1px; margin-bottom:0;}
+
+#header {width:82%; max-width:960px; min-width: 769px; height:auto; margin:0 auto; padding:0 0 26px; z-index:10; position:relative;}
+.title {
+	font-size: 5rem; 
+	position: absolute; 
+	width: 350px;
+	padding: 10px 0 0; 
+	z-index: 99;  
+	right: 0;
+	text-shadow: 5px -9px 9px #000, 0px 0px 1px #000; 
+	background: transparent;
+	@include boxShadow(0 0 0 transparent);
+}
+	.title a, .title a:hover {color:#000;}
+	.home .title a:hover {cursor:default;}
+	.navUL {font-family:$sofiaProLtCdRg;}
+
+/* FOOTER ********************************************* */
+#footer {
+	font-size:1.2em;
+	line-height:1.1em; 
+	padding:2.5em 0;
+}
+	
+/* HOME PAGE  ******************************************** */
+/*.home {background:#fff;
+	background: rgb(255,255,255);
+	background: -moz-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(244,244,244,1) 31%, rgba(214,214,214,1) 53%, rgba(0,0,0,1) 100%);
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(255,255,255,1)), color-stop(31%,rgba(244,244,244,1)), color-stop(53%,rgba(214,214,214,1)), color-stop(100%,rgba(0,0,0,1)));
+	background: -webkit-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%,rgba(244,244,244,1) 31%,rgba(214,214,214,1) 53%,rgba(0,0,0,1) 100%);
+	background: -o-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%,rgba(244,244,244,1) 31%,rgba(214,214,214,1) 53%,rgba(0,0,0,1) 100%);
+	background: -ms-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%,rgba(244,244,244,1) 31%,rgba(214,214,214,1) 53%,rgba(0,0,0,1) 100%);
+	background: radial-gradient(ellipse at center, rgba(255,255,255,1) 0%,rgba(244,244,244,1) 31%,rgba(214,214,214,1) 53%,rgba(0,0,0,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#999999',GradientType=0 );
+	}
+	body.ie9 {filter:none; background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPHJhZGlhbEdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjUwJSIgY3k9IjUwJSIgcj0iNzUlIj4KICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNmZmZmZmYiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSIzMSUiIHN0b3AtY29sb3I9IiNmNGY0ZjQiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSI1MyUiIHN0b3AtY29sb3I9IiNkNmQ2ZDYiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMDAwMDAwIiBzdG9wLW9wYWNpdHk9IjEiLz4KICA8L3JhZGlhbEdyYWRpZW50PgogIDxyZWN0IHg9Ii01MCIgeT0iLTUwIiB3aWR0aD0iMTAxIiBoZWlnaHQ9IjEwMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);}
+*/
+
+	.home .navUL {font-family:$sofiaProLtCdRg;}
+	.home .title {width:100%;}
+	.home .homeA {display:none;}
+	.home .content {opacity:0;}
+	.home #footer {padding:100px 0 0; background:none; visibility:hidden;}
+	.home .articles {display:none;}
+	.home .parallax {opacity:0.4;}
+
+/* SUB PAGES ******************************************** */
+.article {
+	max-width:890px; width:76%; padding:1em 2%; margin:0 auto 40px; opacity:0.97; background:#fff; z-index:1; -moz-background-clip:padding; -webkit-background-clip:padding-box; background-clip:padding-box; 
+	@include borderRadius(12px);
+	@include boxShadow(0px 0px 30px 10px rgba(30, 30, 30, 0.8));
+	}
+	.article img {max-width:100%;}
+	.article ul {margin-bottom:1em;}
+		.article li {margin-left:3%; padding-left:1%; list-style-type:circle;}
+
+.col {float:left;}
+	.col2 {width:45%;}
+		.colRight {}
+		.colLeft {margin-right:10%;}
+
+/* NEWS CONTENT ******************************************** */
+h2.date {float:right; /*padding-right:10px;*/}
+//.news .article h1, .news .article p {padding-left:10px; padding-right:10px;}
+
+/* LOOK ******************************************** */
+.imgLP img {margin:0 auto; display:block;}
+
