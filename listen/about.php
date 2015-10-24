@@ -19,70 +19,44 @@
 	<div id="content">
 		<article class="article cf">
 			<h1>About soundpharm</h1>
-			<h3>Artist description</h3>
-			Instant Music&trade;, improvisational arrangements of natural and 
-			digital sounds. Often chaotic, always changing.<br /><br />
+			<p>Soundpharm is an experiment in sonic arrangements. The use of fractal algorithms to generate melodies and chords is one of the avenues of research. Other forms of chaos, such as feedback, are also subjects of experimentation. In a sense soundpharm is the aural interpretation of my visual art. It also stands on it's own as simply another creative outlet.</p> 
+
+			<h3>Artist history</h3>
+			<p>It started in 1995 with some toys, metal things and a 4-track reel-to-reel at CCAD, making soundtracks for my video feedback collages. Eventually it became "The All-Monster Chorus" after a lot of experimenting with various forms of feedback (kind of like how The Hulk turned green). In Spring of 1997 the first digital compositions began. More sonic experiments continued through 1999 with hours of cassette tape consumed. There were a few live shows played at this time, mostly as part of the Elemental scene. In 2000, <b>fractal music generators</b> like GingerBread &amp; Fmusic were discovered and a new world of sonic experimentation opened up. A few real instruments were purchased, including the centerpiece of the studio, a Roland JP-8000. A collaboration and a couple shows occurred with <a href="http://www.scottyboombox.com/" target="_blank">Scotty Boombox</a> around this time. In recent years the studio productions have been a mix of fractal melodies and original compositions seasoned with a little noisy chaos.</p>
+
+			<h3>Albums</h3>
+			<p><em>neuraral</em>, <em>autochaosoniq</em>, <em>inceprication - live @ skylab</em>, <em>Ikkination</em> &amp; countless unreleased private recordings.</p>
 
 			<h3>Music style</h3>
-			Electronic, Mathematical &amp; Experimental<br /><br />
+			<p>Electronic, Mathematical &amp; Experimental</p>
 
 			<h3>Musical influences</h3>
-			Nature, Science, Art, Life, <a href="http://www.brainwashed.com/lpd/" target="_blank">Legendary Pink Dots</a>
-			(<a href="http://brainwashed.com/eks/" target="_blank">Edward Ka-Spell</a> 
-			&amp; <a href="http://brainwashed.com/silverman/" target="_blank">Silverman</a>), 
+			<p>Nature, Science, Art, Life, <a href="http://legendarypinkdots.org/" target="_blank">Legendary Pink Dots</a>
+			(<a href="https://edwardka-spel.bandcamp.com/" target="_blank">Edward Ka-Spel</a> 
+			&amp; <a href="http://brainwashed.com/common/htdocs/biog/knightp.php?site=mimir" target="_blank">Silverman</a>), 
 			<a href="http://www.brainwashed.com/teargarden/" target="_blank">Tear Garder</a>, 
 			<a href="http://www.subconsciousstudios.com/" target="_blank">cEvin Key</a> (Download, 
 			<a href="http://www.skinnypuppy.com/" target="_blank">Skinny Puppy</a>, 
-			PlatEAU, Doubting Thomas, Cyberaktif, Hilt...), <a href="http://www.philwestern.net" target="_blank">Phil Western</a> (Kone, BEEHATCH, Floatpoint, Frozen Rabbit, Off And Gone, PlatEAU... ), 
-			<a href="http://www.plaid.co.uk/" target="_blank">Plaid</a>, Autechre, 
-			<a href="http://www.arovane.de/" target="_blank">arovane</a>, U-ziq, Coil, 
+			PlatEAU, Doubting Thomas, Cyberaktif, Hilt...), ohGr, 
+			<a href="https://philwestern.bandcamp.com/" target="_blank">Phil Western</a> 
+			(Kone, BEEHATCH, Floatpoint, Frozen Rabbit, Off And Gone, PlatEAU... ),
+			<a href="http://www.toolband.com/" target="_blank">Tool</a>,
+			<a href="http://www.puscifer.com/" target="_blank">Puscifer</a>,
+			<a href="http://www.aperfectcircle.com/" target="_blank">A Perfect Circle</a>, 
+			<a href="http://www.plaid.co.uk/" target="_blank">Plaid</a>, 
+			Autechre, U-ziq, Coil, 
 			<a href="http://www.scottyboombox.com/" target="_blank">Scotty Boombox</a>, 
-			Precenphix, Spiral Realms, 
-			Danny Elfman, <a href="http://www.tipsy.org/" target="_blank">Tipsy</a>, 
+			Precenphix, Spiral Realms, Danny Elfman, 
+			<a href="http://www.tipsy.org/" target="_blank">Tipsy</a>, 
 			<a href="http://www.flaminglips.com/" target="_blank">The Flaming Lips</a>, 
 			<a href="http://www.jackjohnsonmusic.com/" target="_blank">Jack Johnson</a>, 
+			<a href="http://www.alomusic.com/" target="_blank">ALO</a>,
 			<a href="http://www.toriamos.com/" target="_blank">Tori Amos</a>, 
 			<a href="http://www.pearljam.com/" target="_blank">Pearl Jam</a>, 
-			<a href="http://www.stephenmalkmus.com/" target="_blank">Stephen Malkmus</a>, 
-			<a href="http://www.gorillaz.com/" target="_blank">Gorillaz</a>, 
-			<a href="http://www.deathcabforcutie.com/" target="_blank">Death Cab for Cutie</a>, 
-			<a href="http://www.philadelphonic.com/" target="_blank">G. Love</a>, 
-			<a href="http://www.toolband.com/" target="_blank">Tool</a>,
-			<a href="http://www.puscifer.com/" target="_blank">Puscifer</a>  and  
-			<a href="http://www.aperfectcircle.com/" target="_blank">A Perfect Circle</a>.<br /><br />
+			<a href="http://www.stephenmalkmus.com/" target="_blank">Stephen Malkmus</a> and 
+			<a href="http://www.gorillaz.com/" target="_blank">Gorillaz</a>.</p>
 
-			<h3>Similar Artists</h3>
-			M.C.Escher, Duchamp, Dali, Geiger, 
-			<a href="http://morpheusgallery.com/" target="_blank">Jacek Yerka</a>,
-			<a href="http://harlanellison.com/home.htm" target="_blank">Harlan Ellison</a> and
-			<a href="http://www.legendarypinkdots.org/_images/Denver-2002-11-08/denver2.jpg" target="_blank">Edward Ka-Spell</a>.<br /><br />
 
-			<h3>Artist history</h3>
-			Many years of Pharming around for fun. It all started in 1995 with some "toys" and a 4-track 
-			reel-to-reel at CCAD, making soundtracks for my video feedback collages. 
-			It eventually became "The All-Monster Chorus" from a lot of experimenting 
-			with various forms of feedback (kind of like how The Hulk turned green). Started 
-			using Sound Edit 16 in Spring '97 for first digital songs. Collected more toys through '99...
-			discovered <b>fractal music generators</b> like GingerBread &amp; Fmusic in '00... actually 
-			paid for some quality instruments, including the JP-8000, and now have a 
-			well rounded studio (especially with 
-			<a href="http://www.audiomulch.com/" target="_blank">AudioMulch</a> in my arsenal). 
-			With the diversity of musical sources I have been herding in the 
-			last few years, I've realized that I have become a farmer of sound in a way.<br /><br />
-
-			<h3>Group members - past/present</h3>
-			Justihn Jasyn - loops, keyboards, noise toys, programming, samples, occasional voice. 
-			The All Monster Chorus- audio feedback, chaos. Michael Dodds - voice. Occasional friends- various noises.<br /><br />
-
-			<h3>Instruments</h3>
-			Roland JP-8000, Dell Optiplex, 
-			<a href="http://www.audiomulch.com/" target="_blank">AudioMulch</a>, 
-			Zoom 2040?, Yamaha MusicStation, Sound Forge, Audacity, 
-			GingerBread, Fmusic &amp; Musinum Fractal Music Generators, found/homemade objects, 
-			BOSS Dr.Sample, TechnoBox...<br /><br />
-
-			<h3>Albums</h3>
-			<em>neuraral</em>, <em>autochaosoniq</em>, <em>inceprication - live @ skylab</em>, <em>Ikkination</em> &amp; countless unreleased private recordings.
 		</article>
 	</div>
 	<?php include($_SERVER['DOCUMENT_ROOT'] . "/inc/footer.php"); ?>

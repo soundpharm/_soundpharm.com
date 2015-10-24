@@ -982,6 +982,8 @@ h2.date {
       width: 100%;
       max-width: 200px;
       border: 1px solid #bbb; }
+  .gallery .galleryItemInfo {
+    display: none; }
 
 @media only screen and (max-width: 900px), only screen and (max-device-width: 900px) {
   .gallery .galleryItem {

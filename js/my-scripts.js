@@ -1,4 +1,4 @@
-// COMMON SCRIPTS FOR SOUNDPHARM.COM
+// COMMON SCRIPTS FOR SOUNDPHARM.COM ///////////////////
 var navType = 'standard';
 var urlParams = '';
 
@@ -24,7 +24,7 @@ function getParams () {
 });
 
 // jQuery scripts ////////////////////////////////////
-$(function () {
+(function($) {
 	var docBody 	= $('body'),
 		articles 	= $('.articles'),
 		container 	= $('#container'),
@@ -134,7 +134,7 @@ $(function () {
 									imgPrice = images[i].price,
 									imgLi = '';
 
-								imgLi = '<li class="galleryItem cf" data-index="'+matchCount+'"><a href="'+imgURL+'" class="galleryLink" data-size="'+imgPixels+'"><img src="'+imgThumb+'" class="galleryImg" title="'+imgCaption+', '+imgMedium+', '+imgDate+', '+imgNotes+'">'+imgCaption+'</a></li>';
+								imgLi = '<figure class="galleryItem cf" data-index="'+matchCount+'" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="'+imgURL+'" class="galleryLink" itemprop="contentUrl" data-size="'+imgPixels+'" data-index="'+matchCount+'"><img src="'+imgThumb+'" itemprop="thumbnail" class="galleryImg" alt="'+imgCaption+'">'+imgCaption+'</a><figcaption class="galleryItemInfo cf"><h3>'+imgCaption+'</h3>Details: '+imgMedium+' '+imgSize+', '+imgDate+' Price: '+imgPrice+'<br>'+imgNotes+'</figcaption></figure>';
 								gallery.append(imgLi);
 								matchCount++;
 							}
@@ -164,8 +164,7 @@ $(function () {
 				.done(function() {
 					//console.log("Gallery success");
 					parallaxInit();
-					//initPhotoSwipe();
-					initPhotoSwipeFromDOM('.gallery');
+					initPhotoSwipe(gallery);
 				})
 				.fail(function() {
 					console.log("JSON Gallery error");
@@ -180,12 +179,72 @@ $(function () {
 	};
 
 // PhotoSwipe Lightbox /////////////////////////////////////
-	initPhotoSwipe = function() {
-		var pswpElement = document.querySelectorAll('.pswp')[0];
+	initPhotoSwipe = function (gallery) {
+		// body...
+		var $pswp = $('.pswp')[0];
+		var image = [];
+
+		gallery.each( function() {
+			var $pic     = $(this),
+				getItems = function() {
+					var items = [];
+					$pic.find('a').each(function() {
+						var $href   = $(this).attr('href'),
+							$size   = $(this).data('size').split('x'),
+							$width  = $size[0],
+							$height = $size[1],
+							$title 	= $(this).find('.galleryItemInfo').html(),
+							$thumb 	= $(this).find('img').attr('src');
+
+						var item = {
+							src 	: $href,
+							w   	: $width,
+							h   	: $height,
+							msrc 	: $thumb,
+							title 	: $title
+						};
+
+						items.push(item);
+					});
+					return items;
+				};
+
+			var items = getItems();
+
+			$.each(items, function(index, value) {
+				image[index]     = new Image();
+				image[index].src = value.src;
+			});
+
+			$pic.on('click', 'figure', function(event) {
+				event.preventDefault();
+				
+				var $index = $(this).index();
+				var options = {
+					index: $index,
+					bgOpacity: 0.8,
+					showHideOpacity: true,
+					closeOnScroll: false,
+					history: false,
+					shareButtons: [
+						{id:'facebook', label:'Share on Facebook', url:'https://www.facebook.com/sharer/sharer.php?u={{url}}'},
+						{id:'twitter', label:'Tweet', url:'https://twitter.com/intent/tweet?text={{text}}&url={{url}}'},
+						{id:'pinterest', label:'Pin it', url:'http://www.pinterest.com/pin/create/button/?url={{url}}&media={{image_url}}&description={{text}}'},
+						{id:'download', label:'Download image', url:'{{raw_image_url}}', download:false}
+					]
+				};
+
+				var lightBox = new PhotoSwipe($pswp, PhotoSwipeUI_Default, items, options);
+				lightBox.init();
+			});
+		});
+	};
+
+	badPhotoSwipe = function(gallery) {
 
 		// build items array
 		var items = [];
-		$('.galleryLink').each(function(index, el) {
+		gallery.find('.galleryLink').each(function(index, el) {
 			var _this = $(this),
 				targetImg = _this.attr('href'),
 				pixels = _this.attr('data-size'),
@@ -193,205 +252,28 @@ $(function () {
 				pixelsW = parseInt(pixelArray[0], 10),
 				pixelsH = parseInt(pixelArray[1], 10),
 				imgTitle = _this.find('.galleryImg').attr('title'),
+				imgCaption = _this.find('.galleryItemInfo').html(),
 				psItem = {src: targetImg, w: pixelsW, h: pixelsH, title: imgTitle};
 			//console.log(psItem);
 			items.pop(psItem);
 		});
 
-		// define options (if needed)
-		var options = {
-			// optionName: 'option value'
-			// for example:
-			index: 0 // start at first slide
-		};
+		var $pswp = $('.pswp')[0];
 
-		// Initializes and opens PhotoSwipe
-		var gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, items, options);
-		gallery.init();
-	};
-
-	// Straight from Documentation
-	initPhotoSwipeFromDOM = function(gallerySelector) {
-
-		// parse slide data (url, title, size ...) from DOM elements 
-		// (children of gallerySelector)
-		var parseThumbnailElements = function(galleryElement) {
-			var items = [];
-			galleryElement.find('.galleryLink').each(function(index, el) {
-				var _this = $(this),
-					targetImg = _this.attr('href'),
-					pixels = _this.attr('data-size'),
-					pixelArray = pixels.split('x'),
-					pixelsW = parseInt(pixelArray[0], 10),
-					pixelsH = parseInt(pixelArray[1], 10),
-					imgTitle = _this.find('.galleryImg').attr('title'),
-					psItem = {src: targetImg, w: pixelsW, h: pixelsH, title: imgTitle};
-				//console.log(psItem);
-				items.pop(psItem);
-			});
-
-			return items;
-		};
-
-		// find nearest parent element
-		var closest = function closest(el, fn) {
-			return el && ( fn(el) ? el : closest(el.parentNode, fn) );
-		};
-
-		// triggers when user clicks on thumbnail
-		var onThumbnailsClick = function(clickTarget) {
-			
-			//e = e || window.event;
-			//e.preventDefault ? e.preventDefault() : e.returnValue = false;
-
-			//var eTarget = e.target || e.srcElement;
-
-			// find root element of slide
-			var clickedListItem = clickTarget;
-			//closest(eTarget, function(el) {
-			//	return (el.tagName && el.tagName.toUpperCase() === 'FIGURE');
-			//});
-
-			if(!clickedListItem) {
-				return;
-			}
-
-			// find index of clicked item by looping through all child nodes
-			// alternatively, you may define index via data- attribute
-			var clickedGallery = clickedListItem.parents('.gallery'),
-				childNodes = clickedGallery.children('.galleryItem'),
-				numChildNodes = childNodes.length,
-				nodeIndex = 0,
-				index = clickedListItem.attr('data-index');
-
-			/*for (var i = 0; i < numChildNodes; i++) {
-				if(childNodes[i].nodeType !== 1) { 
-					continue; 
-				}
-
-				if(childNodes[i] === clickedListItem) {
-					index = nodeIndex;
-					break;
-				}
-				nodeIndex++;
-			}*/
-
-			//if(index >= 0) {
-				// open PhotoSwipe if valid index found
-				openPhotoSwipe( index, clickedGallery );
-			//}
-			return false;
-		};
-
-		// parse picture index and gallery index from URL (#&pid=1&gid=2)
-		var photoswipeParseHash = function() {
-			var hash = window.location.hash.substring(1),
-			params = {};
-
-			if(hash.length < 5) {
-				return params;
-			}
-
-			var vars = hash.split('&');
-			for (var i = 0; i < vars.length; i++) {
-				if(!vars[i]) {
-					continue;
-				}
-				var pair = vars[i].split('=');  
-				if(pair.length < 2) {
-					continue;
-				}           
-				params[pair[0]] = pair[1];
-			}
-
-			if(params.gid) {
-				params.gid = parseInt(params.gid, 10);
-			}
-
-			return params;
-		};
-
-		var openPhotoSwipe = function(index, galleryElement, disableAnimation, fromURL) {
-			//var pswpElement = document.querySelectorAll('.pswp')[0],
-			var pswpElement = $('.pswp'),
-				gallery,
-				options,
-				items;
-
-			items = parseThumbnailElements(galleryElement);
-			//items = parseThumbnailElements();
-
-			// define options (if needed)
-			options = {
-
-				// define gallery index (for URL)
-				galleryUID: galleryElement.attr('data-pswp-uid'),
-
-				getThumbBoundsFn: function(index) {
-					// See Options -> getThumbBoundsFn section of documentation for more info
-					var thumbnail = items[index].find('img'), // find thumbnail
-						pageYScroll = window.pageYOffset || document.documentElement.scrollTop,
-						rect = thumbnail.getBoundingClientRect(); 
-
-					return {x:rect.left, y:rect.top + pageYScroll, w:rect.width};
-				}
-
-			};
-
-			// PhotoSwipe opened from URL
-			if(fromURL) {
-				if(options.galleryPIDs) {
-					// parse real index when custom PIDs are used 
-					// http://photoswipe.com/documentation/faq.html#custom-pid-in-url
-					for(var j = 0; j < items.length; j++) {
-						if(items[j].pid == index) {
-							options.index = j;
-							break;
-						}
-					}
-				} else {
-					// in URL indexes start from 1
-					options.index = parseInt(index, 10) - 1;
-				}
-			} else {
-				options.index = parseInt(index, 10);
-			}
-
-			// exit if index not found
-			if( isNaN(options.index) ) {
-				return;
-			}
-
-			if(disableAnimation) {
-				options.showAnimationDuration = 0;
-			}
-
-			// Pass data to PhotoSwipe and initialize it
-			gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, items, options);
-			gallery.init();
-		};
-
-		// loop through all gallery elements and bind events
-		var galleryElements = document.querySelectorAll( gallerySelector ),
-			jq_galleryElements = $(gallerySelector);
-
-		//for(var i = 0, l = galleryElements.length; i < l; i++) {
-		//	galleryElements[i].setAttribute('data-pswp-uid', i+1);
-		//	galleryElements[i].onclick = onThumbnailsClick;
-		//}
-		jq_galleryElements.each(function(index, el) {
-			$(el).attr('data-pswp-uid', index+1).on('click', '.galleryItem', function(event) {
-				event.preventDefault();
-				var clickTarget = $(this);
-				onThumbnailsClick(clickTarget);
-			});
+		gallery.on('click', 'figure', function(event) {
+			event.preventDefault();
+			 
+			var $index = $(this).index(),
+				options = {
+					index: $index,
+					bgOpacity: 0.7,
+					showHideOpacity: true
+				};
+			 
+			// Initialize PhotoSwipe
+			var lightBox = new PhotoSwipe($pswp, PhotoSwipeUI_Default, items, options);
+			lightBox.init();
 		});
-
-		// Parse URL and open gallery if it contains #&pid=3&gid=1
-		var hashData = photoswipeParseHash();
-		if(hashData.pid && hashData.gid) {
-			openPhotoSwipe( hashData.pid ,  galleryElements[ hashData.gid - 1 ], true, true );
-		}
 	};
 
 // Content Refresh ////////////////////////////////////////////
@@ -643,9 +525,9 @@ $(function () {
 		// Trigger page change on browser event
 		var _popStateEventCount = 0;
 		window.onpopstate = function(event) {
-			//alert(event.state.data);
+			//console.log(event.state.data);
 			this._popStateEventCount++;
-			if ($.browser.webkit && this._popStateEventCount == 1) {
+			if (this._popStateEventCount == 1) {
 				return;
 			}
 			// just to http because all the animation variables are insane
@@ -658,4 +540,4 @@ $(function () {
 		parallaxInit();
 	}
 	// END jQuery functions
-});
+})(jQuery);

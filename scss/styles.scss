@@ -1,4 +1,4 @@
-// MASTER STYLES FOR SOUNDPHARM.COM //////////////////////////////
+// MASTER STYLES FOR SOUNDPHARM.COM ////////////////////////////
 // IMPORTS -------- */
 	@import "resets";
 	@import "vendor-prefixes";
@@ -17,7 +17,7 @@
 	$TertiaryB: #bbb;
 	$TertiaryC: #ddd;
 
-// Navigation ------
+// Navigation ------ */
 	$navH: 44px; //40
 	$navW: 90px; //90
 	$triW: 13px; //11
@@ -202,6 +202,9 @@
 				border: 1px solid #bbb;
 			}
 		}
+			.galleryItemInfo {
+				display: none;
+			}
 	}
 	@media only screen and (max-width : 900px),
 	only screen and (max-device-width : 900px) {
