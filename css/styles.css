@@ -688,33 +688,36 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.2em; }
 
 h1 {
-  font-size: 2.0em;
-  /* 24px */
+  font-size: 2.8em;
+  /* 34px */
   color: #000;
   margin-bottom: 0.25em; }
 
 h2 {
-  font-size: 1.5em;
-  /* 18px */
+  font-size: 1.75em;
+  /* 21px */
   color: #666;
   margin-bottom: 0.4em; }
 
 h3 {
-  font-size: 1.1em;
-  /* 14px */
+  font-size: 1.5em;
+  /* 18px */
   color: #000;
   margin-bottom: 0.25em; }
 
 h4 {
-  font-size: 1.0em;
-  /* 12px */
+  font-size: 1.25em;
+  /* 15px */
   font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
   font-weight: normal; }
 
 h5 {
-  font-size: 1.0em;
+  font-size: 1.08em;
   /* 13px */
   font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; }
+
+.pswp__caption__center h3 {
+  color: #fff; }
 
 /* text  -------- */
 p {
@@ -981,7 +984,8 @@ h2.date {
     .gallery .galleryItem .galleryImg {
       width: 100%;
       max-width: 200px;
-      border: 1px solid #bbb; }
+      border: 1px solid #bbb;
+      margin-bottom: 5px; }
   .gallery .galleryItemInfo {
     display: none; }
 
@@ -1057,6 +1061,10 @@ h2.date {
     -webkit-border-radius: 1em;
     -moz-border-radius: 1em;
     border-radius: 1em; }
+
+.price {
+  display: inline-block;
+  margin-left: 10px; }
 
 /* LISTEN ******************************************** */
 .music-cover {

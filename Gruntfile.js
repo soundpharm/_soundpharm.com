@@ -73,7 +73,7 @@ module.exports = function(grunt) {
 		},
 		cssmin: {
 			build: {
-				src: 'css/styles-concat.css',
+				src: 'css/styles.css',
 				dest: 'css/styles.min.css'
 			}
 		},

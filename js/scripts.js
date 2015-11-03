@@ -4628,29 +4628,33 @@ function getParams () {
 		// need to reset parallax, wait for full page load then init
 		//var tlPlax = new TimelineLite();
 		var windo = $(window);
-		var plax = $('.parallax');
-		docBody.attr('style', '');
-		var bHeight = docBody.height();
-		if (bHeight < windo.height()) {
-			// make body fit window height
-			bHeight = windo.height();
-			docBody.height(bHeight);
-		}
-		TweenLite.to(plax, 0.75, {height:bHeight, ease:Power4.easeInEaseOut});
-		TweenLite.to(plax, 0.75, {opacity:1, ease:Power4.easeIn});
-		$('div[data-type="background"]').each(function(){
-			var bgobj = $(this); // assigning the object
-			//var bWidth = $('body').css('width');
-			var bgSpeed = bgobj.data('speed');
-			TweenLite.to(bgobj, 0.75, {height:bHeight, ease:Power4.easeInEaseOut});
-			windo.scroll(function() {
-				var yPos = (windo.scrollTop() * bgSpeed);
-				// Put together our final background position
-				var yTop = yPos + 'px';
-				// Move the background
-				bgobj.css({ top: yTop });
+			var plax = $('.parallax');
+			docBody.attr('style', '');
+			var bHeight = docBody.height();
+			if (bHeight < windo.height()) {
+				// make body fit window height
+				bHeight = windo.height();
+				docBody.height(bHeight);
+			}
+			TweenLite.to(plax, 0.75, {height:bHeight, ease:Power4.easeInEaseOut});
+			TweenLite.to(plax, 0.75, {opacity:1, ease:Power4.easeIn});
+			$('div[data-type="background"]').each(function(){
+				var bgobj = $(this); // assigning the object
+				//var bWidth = $('body').css('width');
+				var bgSpeed = bgobj.data('speed');
+				TweenLite.to(bgobj, 0.75, {height:bHeight, ease:Power4.easeInEaseOut});
+				windo.scroll(function() {
+					var yPos = (windo.scrollTop() * bgSpeed);
+					// Put together our final background position
+					var yTop = yPos + 'px';
+					// Move the background
+					bgobj.css({ top: yTop });
+				});
 			});
-		});
+		//} else {
+		if (windo.width() > 479) {
+			$('body').addClass('bgSmallScreen');
+		}
 	};
 	docBody.prepend(parallaxHTML); // do once on first load
 
@@ -4714,7 +4718,11 @@ function getParams () {
 									imgPrice = images[i].price,
 									imgLi = '';
 
-								imgLi = '<figure class="galleryItem cf" data-index="'+matchCount+'" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="'+imgURL+'" class="galleryLink" itemprop="contentUrl" data-size="'+imgPixels+'" data-index="'+matchCount+'"><img src="'+imgThumb+'" itemprop="thumbnail" class="galleryImg" alt="'+imgCaption+'">'+imgCaption+'</a><figcaption class="galleryItemInfo cf"><h3>'+imgCaption+'</h3>Details: '+imgMedium+' '+imgSize+', '+imgDate+' Price: '+imgPrice+'<br>'+imgNotes+'</figcaption></figure>';
+								 if (imgSize !== '' && imgDate !== '') {
+								 	imgSize = imgSize+',';
+								 }
+
+								imgLi = '<figure class="galleryItem cf" data-index="'+matchCount+'" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="'+imgURL+'" class="galleryLink" itemprop="contentUrl" data-size="'+imgPixels+'" data-index="'+matchCount+'"><img src="'+imgThumb+'" itemprop="thumbnail" class="galleryImg" alt="'+imgCaption+'">'+imgCaption+'</a><figcaption class="galleryItemInfo cf"><h3>'+imgCaption+'</h3><strong>Details:</strong> '+imgMedium+', '+imgSize+' '+imgDate+' <strong class="price">Price:</strong>&nbsp;'+imgPrice+'<br>'+imgNotes+'</figcaption></figure>';
 								gallery.append(imgLi);
 								matchCount++;
 							}
@@ -4743,7 +4751,6 @@ function getParams () {
 				})
 				.done(function() {
 					//console.log("Gallery success");
-					parallaxInit();
 					initPhotoSwipe(gallery);
 				})
 				.fail(function() {
@@ -4761,10 +4768,11 @@ function getParams () {
 // PhotoSwipe Lightbox /////////////////////////////////////
 	initPhotoSwipe = function (gallery) {
 		// body...
-		var $pswp = $('.pswp')[0];
-		var image = [];
+		var $pswp = $('.pswp')[0],
+			galCount = gallery.length - 1,
+			image = [];
 
-		gallery.each( function() {
+		gallery.each( function(i) {
 			var $pic     = $(this),
 				getItems = function() {
 					var items = [];
@@ -4773,7 +4781,7 @@ function getParams () {
 							$size   = $(this).data('size').split('x'),
 							$width  = $size[0],
 							$height = $size[1],
-							$title 	= $(this).find('.galleryItemInfo').html(),
+							$title 	= $(this).next('.galleryItemInfo').html(),
 							$thumb 	= $(this).find('img').attr('src');
 
 						var item = {
@@ -4817,6 +4825,10 @@ function getParams () {
 				var lightBox = new PhotoSwipe($pswp, PhotoSwipeUI_Default, items, options);
 				lightBox.init();
 			});
+
+			if (i == galCount) {
+				parallaxInit();
+			}
 		});
 	};
 
@@ -4880,6 +4892,12 @@ function getParams () {
 // Transition Animations ----------------------------------------
 	/* jshint ignore:start */
 	goSubPage = function(clicked) {
+		var sectionNav = clicked.parents('.navLI');
+		if (!sectionNav.hasClass('active')) {
+			//console.log('other section');
+			$('.navLI').removeClass('active');
+			sectionNav.addClass('active');
+		}
 		$('.subNavLI').removeClass('active');
 		clicked.addClass('active');
 		TweenLite.to('.content', 0.75, {opacity:0, onComplete: function() {updateContent();}});
@@ -5100,14 +5118,14 @@ function getParams () {
 		testSubNav();
 		// Nav & Parallax
 		navInit();
-		parallaxInit();
+		//parallaxInit();
 
 		// Trigger page change on browser event
 		var _popStateEventCount = 0;
 		window.onpopstate = function(event) {
 			//console.log(event.state.data);
-			this._popStateEventCount++;
-			if (this._popStateEventCount == 1) {
+			_popStateEventCount++;
+			if (_popStateEventCount == 1) {
 				return;
 			}
 			// just to http because all the animation variables are insane

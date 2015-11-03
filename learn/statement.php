@@ -18,39 +18,9 @@
 	<div id="content" class="article cf">
 		<h1>Artist Statement</h1>
 
-		<p class="center"> 
-			<strong>RULE #1: Change...The one reliable constant in this world.</strong>
-		</p>
-		<p>
-			Through experimentation I spontaneously create the majority of my artwork. Beginning 
-			with a simple shape, line or even concept, the initial event commands 
-			an evolution of steps that end in the final piece. I let chance play heavily 
-			in the beginning of a painting and evaluate where the piece needs to go 
-			as each stage is reached. In this manner the art actually creates itself 
-			with only a loose guidance from me to keep it coherent. The imagery often 
-			reflects the process from which it was created, showing signs of repetition, 
-			illusion, symmetry and iteration. The process itself is a combination 
-			of ideas stemming from my interests in Chaos, Geometry and Surrealism. 
-			I feel the combination of these concepts reflect much of the processes 
-			of life. The near predictability of chaos resides between the rigid structure 
-			of geometry and the loose illogic of the surreal. Almost anywhere you 
-			look in nature, traces of chaos are revealed as the structural guide. 
-			I find great beauty in the representation of chaos and feel that there 
-			is much still to be discovered through experimenting with it's concepts.
-		</p>
-		<p> 
-			My artistic direction has been influenced greatly by the diversity of mediums 
-			which I have been fortunate to be exposed to in life. Thanks to the encouragement 
-			of my wife, family and friends I have found myself expressing ideas through ceramics, 
-			paint, photography, metal, wood, countless industrial processes, music, 
-			interactive design and computer imagery of all kinds. Graduating from Columbus 
-			College of Art &amp; Design in Dec. of 1997, I spent time there in Industrial 
-			Design, Fine Arts and Photography, finally majoring in Time-based Media Studies. 
-			Each major and medium has provided me with a different way of 
-			perceiving the concepts that are important to me. All helped me recognize 
-			strong ideas that I may focus on in future works. I am currently immersed 
-			in web-based design, water color and music.
-		</p>
+		<p>Through art I attempt to discover the grand unified theory of the universe. A simple quest for the knowledge of how things all fit together. In my explorations I take note of patterns, analyzing them from different perspectives.  The primary theme in my work is  interconnectivity. Many Hermetic principles, like "as above, so below," serve as a catalyst for my creative intentions. Duality and complimentary opposites are represented throughout my work. Mathmatics and geometry serve as the structure for these concepts. Nature, space, quantum physics, vibration, infinity, and consciousness all influence the aesthetics of my art. Visual simplicity and conceptual complexity are my goal. My ideas either come in an instant visionary flash or start out as a simple sketch, taking many iterations to mature.</p>
+
+		<p>My artistic direction has been influenced by the diverse mediums that I have been fortunate to work with. Thanks to the encouragement of my wife, family and friends I have found myself expressing ideas through a diversity of mediums. Graduating from Columbus College of Art &amp; Design in 1997, I spent time in Industrial Design, Fine Arts and Photography, finally majoring in Time-based Media Studies (animation and video). Each major and medium has provided me with a different way of expressing concepts. Currently I am immersed acrylic and watercolor painting.</p>
 	</div>
 	<?php include($_SERVER['DOCUMENT_ROOT'] . "/inc/footer.php"); ?>
 </section>

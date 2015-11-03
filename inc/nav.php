@@ -32,7 +32,7 @@
 					<a href="/listen/songs.php" class="navA">listen</a>
 					<ul class="subNavUL cf">
 						<li class="subNavLI nav2A"><a href="/listen/songs.php" class="subNavA">music</a></li>
-						<li class="subNavLI nav2B"><a href="/listen/about.php" class="subNavA">influences</a></li>
+						<li class="subNavLI nav2B"><a href="/listen/about.php" class="subNavA">about</a></li>
 					</ul>
 				</li>
 				<li class="navLI nav3">

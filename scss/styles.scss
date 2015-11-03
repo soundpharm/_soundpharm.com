@@ -95,6 +95,8 @@
 		#bg2px {background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMTIiIGhlaWdodD0iNTYiPgoJPHBhdGggZD0iTTAgMCBMMCAyOCBMNTYgMCBMMTEyIDI4IEw1NiA1NiBMMCAyOCBMMCA1NiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZmZmIiBzdHJva2Utd2lkdGg9IjIiPjwvcGF0aD4KCTxwYXRoIGQ9Ik01NiAwIEw1NiA1NiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZmZmIiBzdHJva2Utd2lkdGg9IjIiPjwvcGF0aD4KCTxwYXRoIGQ9Ik0xMTIgMCBMMTEyIDU2IiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmYiIHN0cm9rZS13aWR0aD0iMiI+PC9wYXRoPgo8L3N2Zz4="); opacity:0.25;}
 		#bg3px {background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMjQiIGhlaWdodD0iMTEyIj4KCTxwYXRoIGQ9Ik0wIDAgTDAgNTYgTDExMiAwIEwyMjQgNTYgTDExMiAxMTIgTDAgNTYgTDAgMTEyIiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmYiIHN0cm9rZS13aWR0aD0iMyI+PC9wYXRoPgoJPHBhdGggZD0iTTExMiAwIEwxMTIgMTEyIiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmYiIHN0cm9rZS13aWR0aD0iMyI+PC9wYXRoPgoJPHBhdGggZD0iTTIyNCAwIEwyMjQgMTEyIiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmYiIHN0cm9rZS13aWR0aD0iMyI+PC9wYXRoPgo8L3N2Zz4="); opacity:0.50;}
 		#bg6px {background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0NDgiIGhlaWdodD0iMjI0Ij4KCTxwYXRoIGQ9Ik0wIDAgTDAgMTEyIEwyMjQgMCBMNDQ4IDExMiBMMjI0IDIyNCBMMCAxMTIgTDAgMjI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmYiIHN0cm9rZS13aWR0aD0iNiI+PC9wYXRoPgoJPHBhdGggZD0iTTIyNCAwIEwyMjQgMjI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmYiIHN0cm9rZS13aWR0aD0iNiI+PC9wYXRoPgoJPHBhdGggZD0iTTQ0OCAwIEw0NDggMjI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmYiIHN0cm9rZS13aWR0aD0iNiI+PC9wYXRoPgo8L3N2Zz4="); opacity:0.75;}
+		//.bgSmallScreen #container {background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1NiIgaGVpZ2h0PSIxMDAiPgo8cmVjdCB3aWR0aD0iNTYiIGhlaWdodD0iMTAwIiBmaWxsPSIjNjY2Ij48L3JlY3Q+CjxwYXRoIGQ9Ik0yOCA2NkwwIDUwTDAgMTZMMjggMEw1NiAxNkw1NiA1MEwyOCA2NkwyOCAxMDAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzk5OSIgc3Ryb2tlLXdpZHRoPSIyIj48L3BhdGg+CjxwYXRoIGQ9Ik0yOCAwTDI4IDM0TDAgNTBMMCA4NEwyOCAxMDBMNTYgODRMNTYgNTBMMjggMzQiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2NjYyIgc3Ryb2tlLXdpZHRoPSIyIj48L3BhdGg+Cjwvc3ZnPg=="); background-color: #666}
+		//.home.bgSmallScreen #container {background: none;}
 
 	.for_fun { // a CSS3 gradient pattern creating triangle spikes
 		background-color:#ddd;
@@ -200,6 +202,7 @@
 				width: 100%;
 				max-width: 200px;
 				border: 1px solid #bbb;
+				margin-bottom: 5px;
 			}
 		}
 			.galleryItemInfo {
@@ -302,6 +305,10 @@
 					color: $primaryA;
 					@include borderRadius(1em);
 				}
+	}
+	.price {
+		display: inline-block;
+		margin-left: 10px;
 	}
 
 /* LISTEN ******************************************** */

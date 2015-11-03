@@ -17,10 +17,10 @@
 	<?php include($_SERVER['DOCUMENT_ROOT'] . "/inc/nav.php"); ?>
 	<div id="content" class="articles">
 		<article class="article">
-			<h2 class="date">10/13/15</h2>
+			<h2 class="date">10/31/15</h2>
 			<h1>A Website Resurrection</h1>
-			<p>Where does the time go? Well if you're me, it's been a mix of career work, family adventures and creating art in the wee hours. Lately it has gone into rebuilding this site with the best practices and modern techniques at my displosal. Mobile friendly, animated and dynamic. New and improved to make for a better user experience.</p>
-			<p>With the new design also comes new content. I have finished a several paintings since my last update:</p>
+			<p>Where does the time go? Well if you're me, it's been a mix of career work, family adventures and creating art in the wee hours. Lately it has gone into rebuilding this site with the best practices and modern techniques at my disposal. Mobile friendly, animated and dynamic. New and improved to make for a better user experience and show off my web development skills.</p>
+			<p>With the new design also comes new content. I have finished a several paintings since my last update and posted them in the Look section. I will post more details for them here soon. For now, just revel in the new site and all its technical wizardry.</p>
 		</article>
 		<article class="article cf">
 			<h2 class="date">10/18/12</h2>

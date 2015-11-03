@@ -28,9 +28,7 @@
 
 			<h1>Paintings</h1>
 			
-			<ul id="all-paintings" data-medium="painting" class="gallery cf">
-
-			</ul>
+			<div id="all-paintings" data-medium="painting" class="gallery cf"></div>
 
 		</article>
 	

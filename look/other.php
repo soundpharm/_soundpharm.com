@@ -22,10 +22,10 @@
 			
 			<!-- MAX IMG WIDTH = 608px -->
 			<h2>Drawings</h2>
-			<ul id="all-new-images" data-medium="drawing" class="gallery"></ul>
+			<div id="all-new-images" data-medium="drawing" class="gallery"></div>
 
 			<h2>Digital Images</h2>
-			<ul id="all-new-images" data-medium="digital" class="gallery"></ul>
+			<div id="all-new-images" data-medium="digital" class="gallery"></div>
 			
 			<!-- h2>Photography</h2>
 			<ul id="all-new-images" data-medium="photograph" class="gallery"></ul -->
