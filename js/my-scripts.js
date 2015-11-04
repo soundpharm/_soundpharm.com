@@ -181,13 +181,17 @@ function getParams () {
 				
 			});
 		} else {
+			if ($('.galleryLink').length) {
+				var container = $('#content');
+				initPhotoSwipe(container);
+			}
 			parallaxInit();
 		}
 	};
 
 // PhotoSwipe Lightbox /////////////////////////////////////
 	initPhotoSwipe = function (gallery) {
-		// body...
+		// 
 		var $pswp = $('.pswp')[0],
 			galCount = gallery.length - 1,
 			image = [];
@@ -196,13 +200,22 @@ function getParams () {
 			var $pic     = $(this),
 				getItems = function() {
 					var items = [];
-					$pic.find('a').each(function() {
+					$pic.find('.galleryLink').each(function() {
 						var $href   = $(this).attr('href'),
 							$size   = $(this).data('size').split('x'),
 							$width  = $size[0],
 							$height = $size[1],
-							$title 	= $(this).next('.galleryItemInfo').html(),
-							$thumb 	= $(this).find('img').attr('src');
+							$srcI	= $href.lastIndexOf("/"),
+							$src1	= $href.substr(0,$srcI),
+							$src2 	= $href.substr($srcI),
+							$thumb 	= $src1+'/thumbs'+$src2,
+							$title 	= ' ';
+
+							if ($(this).hasClass('imgLink')) {
+								$title = $(this).html();
+							} else {
+								$title = $(this).next('.galleryItemInfo').html();
+							}
 
 						var item = {
 							src 	: $href,
@@ -224,7 +237,7 @@ function getParams () {
 				image[index].src = value.src;
 			});
 
-			$pic.on('click', 'figure', function(event) {
+			$pic.on('click', '.galleryLink', function(event) {
 				event.preventDefault();
 				
 				var $index = $(this).index();

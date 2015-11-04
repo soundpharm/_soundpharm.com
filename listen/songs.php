@@ -19,11 +19,11 @@
 	<div id="content">
 		<article class="article cf">
 			<h1>Studio Releases</h1>
-			<p class="small">To download MP3s, right-click on song titles and select "Save Target As...".</p>
+			<p class="small">To download MP3s, right-click on song titles and select "Save Target As...". If you would like a CD, send your mailing address to: <a href="mailto:soundpharm&#64;gmail.com">soundpharm&#64;gmail.com</a>.</p>
 
-			<a href="/graphics/digital/thumbs/neuraural-cover-front.jpg"><img src="/graphics/digital/thumbs/neuraural-cover-front.jpg" width="200" height="200" class="music-cover" /></a>
 			<h2>neuraural</h2>
-			Released in 2007, these songs were created with a more traditional approach to music writing.
+			<figure class="galleryItem cf music-cover" data-index="1" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject"><a href="/graphics/digital/neuraural-cover-front.jpg" class="galleryLink" itemprop="contentUrl" data-size="600x597" data-index="1"><img src="/graphics/digital/thumbs/neuraural-cover-front.jpg" itemprop="thumbnail" class="galleryImg" alt="Neuraural - front cover"></a><figcaption class="galleryItemInfo cf"><h3>Neuraural - front cover</h3></figcaption></figure>
+			<p>Released in 2007, these songs were created with a more traditional approach to music writing.</p>
 			<ol>
 				<li><a href="/listen/neuraural/oot.mp3">oot</a>
 				<li><a href="/listen/neuraural/ToDaYa.mp3">ToDaYa</a>
@@ -37,10 +37,9 @@
 				<li><a href="/listen/neuraural/Purizion.mp3">Purizion</a>
 			</ol>
 
-			<p>
-			<a href="/graphics/digital/thumbs/autochaosoniq_front.jpg"><img src="/graphics/digital/thumbs/autochaosoniq_front.jpg" width="200" height="200" class="music-cover" /></a>
 			<h2>autochaosoniq</h2>
-			The first studio release from soundpharm, 2002. 
+			<figure class="galleryItem cf music-cover" data-index="2" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject"><a href="/graphics/digital/autochaosoniq_front.jpg" class="galleryLink" itemprop="contentUrl" data-size="450x450" data-index="2"><img src="/graphics/digital/thumbs/autochaosoniq_front.jpg" itemprop="thumbnail" class="galleryImg" alt="Autochaosoniq"></a><figcaption class="galleryItemInfo cf"><h3>Autochaosoniq</h3></figcaption></figure>
+			<p>The first studio release from soundpharm, 2002. </p>
 			<ol>
 				<li><a href="chaostrophy.mp3">Chaostrophy</a>
 				<li><a href="sFlitphoN.mp3">sFlitphoN</a>
@@ -55,11 +54,10 @@
 				<li>viziere
 				<li><a href="intrigGer.mp3">intrigGer</a>
 			</ol>
-			</p>
-			<p>
-			<a href="/graphics/digital/thumbs/inceprication.jpg"><img src="/graphics/digital/thumbs/inceprication.jpg" width="200" height="200" class="music-cover" /></a>
+
 			<h2>inceprication - live @ Skylab</h2>
-			 Opening for <a href="http://www.scottyboombox.com/" target="_blank">Scotty Boombox</a> in the Skylab gallery space on June 16, 2001.
+			<figure class="galleryItem cf music-cover" data-index="3" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject"><a href="/graphics/digital/inceprication.jpg" class="galleryLink" itemprop="contentUrl" data-size="341x684" data-index="3"><img src="/graphics/digital/thumbs/inceprication.jpg" itemprop="thumbnail" class="galleryImg" alt="Inceprication"></a><figcaption class="galleryItemInfo cf"><h3>Inceprication</h3><strong>Details:</strong> Watercolor/digital photo/Photoshop,  2001 <strong class="price">Price:</strong>&nbsp;N/A<br>Cover for my first live CD, "inceprication - live @ skylab".</figcaption></figure>
+			<p>Opening for <a href="http://www.scottyboombox.com/" target="_blank">Scotty Boombox</a> in the Skylab gallery space on June 16, 2001.</p>
 			<ol>
 				<li>siniYinis
 				<li>onstence
@@ -73,9 +71,7 @@
 				<li>UknPhair
 			</ol>
 
-			</p>
-			<p>
-			If you would like a CD, send your mailing address to: <a href="mailto:soundpharm&#64;gmail.com">soundpharm&#64;gmail.com</a>.
+			
 
 		</article>
 		<article class="article cf">

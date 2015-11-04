@@ -3,11 +3,19 @@
 /* GLOBAL STRUCTURE ***************************************** */
 body {}
 #container {
-	 min-width:800px;
+	min-width:800px;
+	//font-size: 0.75em;
 }
 	.no-js #container {background:url(/graphics/global/bg-hex-6px-wht.png) 0 0 repeat;}
 	//#content, .content {}
 	//.content #content {}
+
+
+	h1 {font-size:1.9em; /* 34px */}
+	h2 {font-size:1.75em; /* 21px */}
+	h3 {font-size:1.5em; /* 18px */}
+	h4 {font-size:1.25em; /* 15px */}
+	h5 {font-size:1.08em; /* 13px */}
 
 /* HEADER & NAVIGATION *********************************** */
 //#header {max-width:950px; width:85%; height:40px; margin:0 auto; padding:0 8% 60px 8%; z-index:10; position:relative;}

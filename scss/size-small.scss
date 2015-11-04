@@ -5,10 +5,17 @@ body {}
 #container {
 	width:100%;
 	min-width:320px;
+	font-size: 0.8125em;
 }
 	.no-js #container {background:url(/graphics/global/bg-hex-6px-wht.png) 0 0 repeat;}
 	//#content, .content {}
 	//.content #content {}
+
+	h1 {font-size:2.1em; /* 25.2px */}
+	h2 {font-size:1.75em; /* 21px */}
+	h3 {font-size:1.5em; /* 18px */}
+	h4 {font-size:1.25em; /* 15px */}
+	h5 {font-size:1.08em; /* 13px */}
 
 /* HEADER & NAVIGATION *********************************** */
 //#header {max-width:950px; width:85%; height:40px; margin:0 auto; padding:0 8% 60px 8%; z-index:10; position:relative;}
@@ -41,7 +48,7 @@ body {}
 
 /* SUB PAGES ******************************************** */
 .article {
-	max-width:890px; width:76%; padding:1em 2%; margin:0 auto 40px; opacity:0.97; background:#fff; z-index:1; -moz-background-clip:padding; -webkit-background-clip:padding-box; background-clip:padding-box; 
+	max-width: 890px; width:76%; padding:1em 2%; margin:0 auto 40px; opacity:0.97; background:#fff; z-index:1; -moz-background-clip:padding; -webkit-background-clip:padding-box; background-clip:padding-box; 
 	@include borderRadius(12px);
 	@include boxShadow(0px 0px 30px 10px rgba(30, 30, 30, 0.8));
 	}
