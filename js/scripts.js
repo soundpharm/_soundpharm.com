@@ -4751,7 +4751,7 @@ function getParams () {
 				})
 				.done(function() {
 					//console.log("Gallery success");
-					initPhotoSwipe(gallery);
+					initPhotoSwipe(gallery, 'figure');
 				})
 				.fail(function() {
 					console.log("JSON Gallery error");
@@ -4761,17 +4761,18 @@ function getParams () {
 				
 			});
 		} else {
+
 			if ($('.galleryLink').length) {
 				var container = $('#content');
-				initPhotoSwipe(container);
+				initPhotoSwipe(container, '.galleryLink');
 			}
 			parallaxInit();
 		}
 	};
 
 // PhotoSwipe Lightbox /////////////////////////////////////
-	initPhotoSwipe = function (gallery) {
-		// 
+	initPhotoSwipe = function (gallery, trigger) {
+		// body...
 		var $pswp = $('.pswp')[0],
 			galCount = gallery.length - 1,
 			image = [];
@@ -4780,7 +4781,7 @@ function getParams () {
 			var $pic     = $(this),
 				getItems = function() {
 					var items = [];
-					$pic.find('.galleryLink').each(function() {
+					$pic.find('.galleryLink').each(function(index) {
 						var $href   = $(this).attr('href'),
 							$size   = $(this).data('size').split('x'),
 							$width  = $size[0],
@@ -4791,11 +4792,12 @@ function getParams () {
 							$thumb 	= $src1+'/thumbs'+$src2,
 							$title 	= ' ';
 
-							if ($(this).hasClass('imgLink')) {
-								$title = $(this).html();
-							} else {
-								$title = $(this).next('.galleryItemInfo').html();
-							}
+						if ($(this).hasClass('imgLink')) {
+							$title = $(this).html();
+						} else {
+							$title = $(this).next('.galleryItemInfo').html();
+						}
+						$(this).attr('data-index', index);
 
 						var item = {
 							src 	: $href,
@@ -4817,9 +4819,9 @@ function getParams () {
 				image[index].src = value.src;
 			});
 
-			$pic.on('click', '.galleryLink', function(event) {
+			$pic.on('click', trigger, function(event) {
 				event.preventDefault();
-				
+				console.log($(this).index());
 				var $index = $(this).index();
 				var options = {
 					index: $index,
@@ -4845,8 +4847,8 @@ function getParams () {
 		});
 	};
 
-	badPhotoSwipe = function(gallery) {
-
+	/*badPhotoSwipe = function(gallery) {
+		return false;
 		// build items array
 		var items = [];
 		gallery.find('.galleryLink').each(function(index, el) {
@@ -4879,7 +4881,7 @@ function getParams () {
 			var lightBox = new PhotoSwipe($pswp, PhotoSwipeUI_Default, items, options);
 			lightBox.init();
 		});
-	};
+	};*/
 
 // Content Refresh ////////////////////////////////////////////
 	updateContent = function(isHome){

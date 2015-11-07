@@ -171,7 +171,7 @@ function getParams () {
 				})
 				.done(function() {
 					//console.log("Gallery success");
-					initPhotoSwipe(gallery, 'figure');
+					initPhotoSwipe(gallery);
 				})
 				.fail(function() {
 					console.log("JSON Gallery error");
@@ -181,18 +181,18 @@ function getParams () {
 				
 			});
 		} else {
-
+			console.log('no gallery');
 			if ($('.galleryLink').length) {
 				var container = $('#content');
-				initPhotoSwipe(container, '.galleryLink');
+				initPhotoSwipe(container);
 			}
 			parallaxInit();
 		}
 	};
 
 // PhotoSwipe Lightbox /////////////////////////////////////
-	initPhotoSwipe = function (gallery, trigger) {
-		// body...
+	initPhotoSwipe = function (gallery) {
+		// 
 		var $pswp = $('.pswp')[0],
 			galCount = gallery.length - 1,
 			image = [];
@@ -201,7 +201,7 @@ function getParams () {
 			var $pic     = $(this),
 				getItems = function() {
 					var items = [];
-					$pic.find('.galleryLink').each(function(index) {
+					$pic.find('.galleryLink').each(function(i) {
 						var $href   = $(this).attr('href'),
 							$size   = $(this).data('size').split('x'),
 							$width  = $size[0],
@@ -217,7 +217,7 @@ function getParams () {
 						} else {
 							$title = $(this).next('.galleryItemInfo').html();
 						}
-						$(this).attr('data-index', index);
+						$(this).attr('data-index', i);
 
 						var item = {
 							src 	: $href,
@@ -239,9 +239,10 @@ function getParams () {
 				image[index].src = value.src;
 			});
 
-			$pic.on('click', trigger, function(event) {
+			$pic.on('click', '.galleryLink', function(event) {
 				event.preventDefault();
-				console.log($(this).index());
+				//console.log($(this).index());
+				//var $index = $(this).attr('data-index'),
 				var $index = $(this).index();
 				var options = {
 					index: $index,
@@ -267,8 +268,8 @@ function getParams () {
 		});
 	};
 
-	/*badPhotoSwipe = function(gallery) {
-		return false;
+	badPhotoSwipe = function(gallery) {
+
 		// build items array
 		var items = [];
 		gallery.find('.galleryLink').each(function(index, el) {
@@ -301,7 +302,7 @@ function getParams () {
 			var lightBox = new PhotoSwipe($pswp, PhotoSwipeUI_Default, items, options);
 			lightBox.init();
 		});
-	};*/
+	};
 
 // Content Refresh ////////////////////////////////////////////
 	updateContent = function(isHome){

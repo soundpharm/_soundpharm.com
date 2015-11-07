@@ -29,11 +29,6 @@
 			<p>"<a href="/graphics/paintings/mixed-hope-and-strength.jpg" target="_blank" class="galleryLink imgLink" title="Hope and Strength" data-size="750x1233">Hope and Strength</a>" - Acrylic, thread and feathers. 27 x 50 inches</p>
 			<p>Por Vida is an annual show/event that applies a contemporary take on the traditional Mexican holiday D&iacute;a de los Muertos (Day of The Dead). Por Vida integrates a themed and curated art exhibit, food and drink, music and installation spaces. It was created by Columbus, Ohio artist Kat Marie Moya who I have known for over 14 years.</p>
 			
-			<p><strong>More info:</strong><br/>
-			<a href="http://porvida614.com/" target="_blank">http://porvida614.com/</a><br/>
-			<a href="http://www.facebook.com/pages/Por-Vida/123525667677852?ref=ts&fref=ts" target="_blank">http://www.facebook.com/pages/Por-Vida/123525667677852?ref=ts&fref=ts</a><br/>
-			Located at: <a href="http://junctionviewstudios.com/info.html" target="_blank">http://junctionviewstudios.com/info.html</a>
-			</p>
 			<p>Over the past two years (yes I've neglected this site thanks to facebook) I have completed a few other paintings:<br/>
 			<a href="/graphics/paintings/acrylic-Nucleattice-II-hexolaris.jpg" target="_blank" class="galleryLink imgLink" title="" data-size="650x813">Hexolaris, Nucleattice II </a>- acrylic on canvas, 16 x 20, Feb 2 - May 28, 2012<br/>
 			<a href="/graphics/paintings/acrylic-celestasis.jpg" target="_blank" class="galleryLink imgLink" title="" data-size="800x1015">Celestasis</a> - acrylic on canvasboard, 11 x 14, Nov 2011- Feb 10 2012<br/>
