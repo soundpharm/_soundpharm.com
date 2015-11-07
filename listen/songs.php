@@ -56,7 +56,7 @@
 			</ol>
 
 			<h2>inceprication - live @ Skylab</h2>
-			<figure class="galleryItem cf music-cover" data-index="3" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject"><a href="/graphics/digital/inceprication.jpg" class="galleryLink" itemprop="contentUrl" data-size="341x684" data-index="3"><img src="/graphics/digital/thumbs/inceprication.jpg" itemprop="thumbnail" class="galleryImg" alt="Inceprication"></a><figcaption class="galleryItemInfo cf"><h3>Inceprication</h3><strong>Details:</strong> Watercolor/digital photo/Photoshop,  2001 <strong class="price">Price:</strong>&nbsp;N/A<br>Cover for my first live CD, "inceprication - live @ skylab".</figcaption></figure>
+			<figure class="galleryItem cf music-cover" data-index="3" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject"><a href="/graphics/digital/inceprication.jpg" class="galleryLink" itemprop="contentUrl" data-size="341x684" data-index="3"><img src="/graphics/digital/thumbs/inceprication.jpg" itemprop="thumbnail" class="galleryImg" alt="Inceprication"></a><figcaption class="galleryItemInfo cf"><h3>Inceprication</h3></figcaption></figure>
 			<p>Opening for <a href="http://www.scottyboombox.com/" target="_blank">Scotty Boombox</a> in the Skylab gallery space on June 16, 2001.</p>
 			<ol>
 				<li>siniYinis

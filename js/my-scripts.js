@@ -237,11 +237,16 @@ function getParams () {
 			$.each(items, function(index, value) {
 				image[index]     = new Image();
 				image[index].src = value.src;
+				//console.log(index+' '+value.src);
 			});
-
+			$(trigger).each(function(index, el) {
+				console.log($(this).index()+' '+$(this).attr('href'));
+			});
 			$pic.on('click', trigger, function(event) {
 				event.preventDefault();
-				console.log($(this).index());
+				//console.log($(this).index());
+				//console.log($(this).attr('href'));
+				//var $index = $(this).attr('data-index');
 				var $index = $(this).index();
 				var options = {
 					index: $index,
